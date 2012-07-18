@@ -13,7 +13,4 @@ build/*
 xcuserdata
 profile
 *.moved-aside
-
-DrillDownApp/.DS_Store
-
-.DS_Store
+DerivedData

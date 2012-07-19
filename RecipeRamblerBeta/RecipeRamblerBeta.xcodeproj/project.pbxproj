@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E62DFFA15B7436E00BA872B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62DFF915B7436E00BA872B /* UIKit.framework */; };
+		9E62DFFC15B7436E00BA872B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62DFFB15B7436E00BA872B /* Foundation.framework */; };
+		9E62DFFE15B7436E00BA872B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62DFFD15B7436E00BA872B /* CoreGraphics.framework */; };
+		9E62E00415B7436E00BA872B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E62E00215B7436E00BA872B /* InfoPlist.strings */; };
+		9E62E00615B7436E00BA872B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62E00515B7436E00BA872B /* main.m */; };
+		9E62E00A15B7436E00BA872B /* RecipeRamblerBetaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62E00915B7436E00BA872B /* RecipeRamblerBetaAppDelegate.m */; };
+		9E62E00D15B7436E00BA872B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E62E00B15B7436E00BA872B /* MainWindow.xib */; };
+		9E62E01015B7436E00BA872B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62E00F15B7436E00BA872B /* RootViewController.m */; };
+		9E62E01315B7436E00BA872B /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E62E01115B7436E00BA872B /* RootViewController.xib */; };
+		9E62E01B15B7436E00BA872B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62E01A15B7436E00BA872B /* SenTestingKit.framework */; };
+		9E62E01C15B7436E00BA872B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62DFF915B7436E00BA872B /* UIKit.framework */; };
+		9E62E01D15B7436E00BA872B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62DFFB15B7436E00BA872B /* Foundation.framework */; };
+		9E62E01E15B7436E00BA872B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E62DFFD15B7436E00BA872B /* CoreGraphics.framework */; };
+		9E62E02615B7436E00BA872B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E62E02415B7436E00BA872B /* InfoPlist.strings */; };
+		9E62E02815B7436E00BA872B /* RecipeRamblerBetaTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9E62E02715B7436E00BA872B /* RecipeRamblerBetaTests.h */; };
+		9E62E02A15B7436E00BA872B /* RecipeRamblerBetaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62E02915B7436E00BA872B /* RecipeRamblerBetaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E62E01F15B7436E00BA872B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E62DFEC15B7436E00BA872B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E62DFF415B7436E00BA872B;
+			remoteInfo = RecipeRamblerBeta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E62DFF515B7436E00BA872B /* RecipeRamblerBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeRamblerBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E62DFF915B7436E00BA872B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E62DFFB15B7436E00BA872B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9E62DFFD15B7436E00BA872B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9E62E00115B7436E00BA872B /* RecipeRamblerBeta-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RecipeRamblerBeta-Info.plist"; sourceTree = "<group>"; };
+		9E62E00315B7436E00BA872B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E62E00515B7436E00BA872B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E62E00715B7436E00BA872B /* RecipeRamblerBeta-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RecipeRamblerBeta-Prefix.pch"; sourceTree = "<group>"; };
+		9E62E00815B7436E00BA872B /* RecipeRamblerBetaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeRamblerBetaAppDelegate.h; sourceTree = "<group>"; };
+		9E62E00915B7436E00BA872B /* RecipeRamblerBetaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeRamblerBetaAppDelegate.m; sourceTree = "<group>"; };
+		9E62E00C15B7436E00BA872B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		9E62E00E15B7436E00BA872B /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		9E62E00F15B7436E00BA872B /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		9E62E01215B7436E00BA872B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		9E62E01915B7436E00BA872B /* RecipeRamblerBetaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeRamblerBetaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E62E01A15B7436E00BA872B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9E62E02315B7436E00BA872B /* RecipeRamblerBetaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RecipeRamblerBetaTests-Info.plist"; sourceTree = "<group>"; };
+		9E62E02515B7436E00BA872B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E62E02715B7436E00BA872B /* RecipeRamblerBetaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeRamblerBetaTests.h; sourceTree = "<group>"; };
+		9E62E02915B7436E00BA872B /* RecipeRamblerBetaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeRamblerBetaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E62DFF215B7436E00BA872B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E62DFFA15B7436E00BA872B /* UIKit.framework in Frameworks */,
+				9E62DFFC15B7436E00BA872B /* Foundation.framework in Frameworks */,
+				9E62DFFE15B7436E00BA872B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E62E01515B7436E00BA872B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E62E01B15B7436E00BA872B /* SenTestingKit.framework in Frameworks */,
+				9E62E01C15B7436E00BA872B /* UIKit.framework in Frameworks */,
+				9E62E01D15B7436E00BA872B /* Foundation.framework in Frameworks */,
+				9E62E01E15B7436E00BA872B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E62DFEA15B7436E00BA872B = {
+			isa = PBXGroup;
+			children = (
+				9E62DFFF15B7436E00BA872B /* RecipeRamblerBeta */,
+				9E62E02115B7436E00BA872B /* RecipeRamblerBetaTests */,
+				9E62DFF815B7436E00BA872B /* Frameworks */,
+				9E62DFF615B7436E00BA872B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E62DFF615B7436E00BA872B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E62DFF515B7436E00BA872B /* RecipeRamblerBeta.app */,
+				9E62E01915B7436E00BA872B /* RecipeRamblerBetaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E62DFF815B7436E00BA872B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E62DFF915B7436E00BA872B /* UIKit.framework */,
+				9E62DFFB15B7436E00BA872B /* Foundation.framework */,
+				9E62DFFD15B7436E00BA872B /* CoreGraphics.framework */,
+				9E62E01A15B7436E00BA872B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E62DFFF15B7436E00BA872B /* RecipeRamblerBeta */ = {
+			isa = PBXGroup;
+			children = (
+				9E62E00815B7436E00BA872B /* RecipeRamblerBetaAppDelegate.h */,
+				9E62E00915B7436E00BA872B /* RecipeRamblerBetaAppDelegate.m */,
+				9E62E00B15B7436E00BA872B /* MainWindow.xib */,
+				9E62E00E15B7436E00BA872B /* RootViewController.h */,
+				9E62E00F15B7436E00BA872B /* RootViewController.m */,
+				9E62E01115B7436E00BA872B /* RootViewController.xib */,
+				9E62E00015B7436E00BA872B /* Supporting Files */,
+			);
+			path = RecipeRamblerBeta;
+			sourceTree = "<group>";
+		};
+		9E62E00015B7436E00BA872B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E62E00115B7436E00BA872B /* RecipeRamblerBeta-Info.plist */,
+				9E62E00215B7436E00BA872B /* InfoPlist.strings */,
+				9E62E00515B7436E00BA872B /* main.m */,
+				9E62E00715B7436E00BA872B /* RecipeRamblerBeta-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E62E02115B7436E00BA872B /* RecipeRamblerBetaTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E62E02715B7436E00BA872B /* RecipeRamblerBetaTests.h */,
+				9E62E02915B7436E00BA872B /* RecipeRamblerBetaTests.m */,
+				9E62E02215B7436E00BA872B /* Supporting Files */,
+			);
+			path = RecipeRamblerBetaTests;
+			sourceTree = "<group>";
+		};
+		9E62E02215B7436E00BA872B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E62E02315B7436E00BA872B /* RecipeRamblerBetaTests-Info.plist */,
+				9E62E02415B7436E00BA872B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E62DFF415B7436E00BA872B /* RecipeRamblerBeta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E62E02D15B7436E00BA872B /* Build configuration list for PBXNativeTarget "RecipeRamblerBeta" */;
+			buildPhases = (
+				9E62DFF115B7436E00BA872B /* Sources */,
+				9E62DFF215B7436E00BA872B /* Frameworks */,
+				9E62DFF315B7436E00BA872B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecipeRamblerBeta;
+			productName = RecipeRamblerBeta;
+			productReference = 9E62DFF515B7436E00BA872B /* RecipeRamblerBeta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E62E01815B7436E00BA872B /* RecipeRamblerBetaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E62E03015B7436E00BA872B /* Build configuration list for PBXNativeTarget "RecipeRamblerBetaTests" */;
+			buildPhases = (
+				9E62E01415B7436E00BA872B /* Sources */,
+				9E62E01515B7436E00BA872B /* Frameworks */,
+				9E62E01615B7436E00BA872B /* Resources */,
+				9E62E01715B7436E00BA872B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E62E02015B7436E00BA872B /* PBXTargetDependency */,
+			);
+			name = RecipeRamblerBetaTests;
+			productName = RecipeRamblerBetaTests;
+			productReference = 9E62E01915B7436E00BA872B /* RecipeRamblerBetaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E62DFEC15B7436E00BA872B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9E62DFEF15B7436E00BA872B /* Build configuration list for PBXProject "RecipeRamblerBeta" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9E62DFEA15B7436E00BA872B;
+			productRefGroup = 9E62DFF615B7436E00BA872B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E62DFF415B7436E00BA872B /* RecipeRamblerBeta */,
+				9E62E01815B7436E00BA872B /* RecipeRamblerBetaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E62DFF315B7436E00BA872B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E62E00415B7436E00BA872B /* InfoPlist.strings in Resources */,
+				9E62E00D15B7436E00BA872B /* MainWindow.xib in Resources */,
+				9E62E01315B7436E00BA872B /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E62E01615B7436E00BA872B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E62E02615B7436E00BA872B /* InfoPlist.strings in Resources */,
+				9E62E02815B7436E00BA872B /* RecipeRamblerBetaTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E62E01715B7436E00BA872B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E62DFF115B7436E00BA872B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E62E00615B7436E00BA872B /* main.m in Sources */,
+				9E62E00A15B7436E00BA872B /* RecipeRamblerBetaAppDelegate.m in Sources */,
+				9E62E01015B7436E00BA872B /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E62E01415B7436E00BA872B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E62E02A15B7436E00BA872B /* RecipeRamblerBetaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E62E02015B7436E00BA872B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E62DFF415B7436E00BA872B /* RecipeRamblerBeta */;
+			targetProxy = 9E62E01F15B7436E00BA872B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E62E00215B7436E00BA872B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E62E00315B7436E00BA872B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9E62E00B15B7436E00BA872B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E62E00C15B7436E00BA872B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		9E62E01115B7436E00BA872B /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E62E01215B7436E00BA872B /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		9E62E02415B7436E00BA872B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E62E02515B7436E00BA872B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E62E02B15B7436E00BA872B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9E62E02C15B7436E00BA872B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E62E02E15B7436E00BA872B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecipeRamblerBeta/RecipeRamblerBeta-Prefix.pch";
+				INFOPLIST_FILE = "RecipeRamblerBeta/RecipeRamblerBeta-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9E62E02F15B7436E00BA872B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecipeRamblerBeta/RecipeRamblerBeta-Prefix.pch";
+				INFOPLIST_FILE = "RecipeRamblerBeta/RecipeRamblerBeta-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9E62E03115B7436E00BA872B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RecipeRamblerBeta.app/RecipeRamblerBeta";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecipeRamblerBeta/RecipeRamblerBeta-Prefix.pch";
+				INFOPLIST_FILE = "RecipeRamblerBetaTests/RecipeRamblerBetaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9E62E03215B7436E00BA872B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RecipeRamblerBeta.app/RecipeRamblerBeta";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecipeRamblerBeta/RecipeRamblerBeta-Prefix.pch";
+				INFOPLIST_FILE = "RecipeRamblerBetaTests/RecipeRamblerBetaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E62DFEF15B7436E00BA872B /* Build configuration list for PBXProject "RecipeRamblerBeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E62E02B15B7436E00BA872B /* Debug */,
+				9E62E02C15B7436E00BA872B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E62E02D15B7436E00BA872B /* Build configuration list for PBXNativeTarget "RecipeRamblerBeta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E62E02E15B7436E00BA872B /* Debug */,
+				9E62E02F15B7436E00BA872B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9E62E03015B7436E00BA872B /* Build configuration list for PBXNativeTarget "RecipeRamblerBetaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E62E03115B7436E00BA872B /* Debug */,
+				9E62E03215B7436E00BA872B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E62DFEC15B7436E00BA872B /* Project object */;
+}

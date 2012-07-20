@@ -813,7 +813,10 @@
 				9E240F1715B835FC00072470 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+<<<<<<< HEAD
 			defaultConfigurationName = Release;
+=======
+>>>>>>> bb2db1af1e35081c8bd6b25e1e229db34aa4136e
 		};
 		9E240F1815B835FC00072470 /* Build configuration list for PBXNativeTarget "hufgiudrgsuTests" */ = {
 			isa = XCConfigurationList;
@@ -822,7 +825,10 @@
 				9E240F1A15B835FC00072470 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+<<<<<<< HEAD
 			defaultConfigurationName = Release;
+=======
+>>>>>>> bb2db1af1e35081c8bd6b25e1e229db34aa4136e
 		};
 		9E4C888515B79A020004152C /* Build configuration list for PBXProject "RecipeRamblerBeta2" */ = {
 			isa = XCConfigurationList;

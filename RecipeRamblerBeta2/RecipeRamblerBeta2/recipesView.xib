@@ -47,6 +47,10 @@
 						<string key="NSFrame">{{117, 53}, {86, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+<<<<<<< HEAD
+=======
+						<string key="NSReuseIdentifierKey">_NS:311</string>
+>>>>>>> bb2db1af1e35081c8bd6b25e1e229db34aa4136e
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -67,7 +71,11 @@
 						<float key="IBUIMinimumFontSize">10</float>
 					</object>
 				</object>
+<<<<<<< HEAD
 				<string key="NSFrameSize">{320, 460}</string>
+=======
+				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
+>>>>>>> bb2db1af1e35081c8bd6b25e1e229db34aa4136e
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
@@ -137,7 +145,10 @@
 					<string>-1.IBPluginDependency</string>
 					<string>-2.CustomClassName</string>
 					<string>-2.IBPluginDependency</string>
+<<<<<<< HEAD
 					<string>1.IBEditorWindowLastContentRect</string>
+=======
+>>>>>>> bb2db1af1e35081c8bd6b25e1e229db34aa4136e
 					<string>1.IBPluginDependency</string>
 					<string>4.IBPluginDependency</string>
 				</object>
@@ -147,7 +158,10 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>UIResponder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+<<<<<<< HEAD
 					<string>{{344, 485}, {320, 480}}</string>
+=======
+>>>>>>> bb2db1af1e35081c8bd6b25e1e229db34aa4136e
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
@@ -155,17 +169,25 @@
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<reference key="dict.sortedKeys" ref="0"/>
+<<<<<<< HEAD
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 				</object>
+=======
+				<reference key="dict.values" ref="0"/>
+>>>>>>> bb2db1af1e35081c8bd6b25e1e229db34aa4136e
 			</object>
 			<nil key="activeLocalization"/>
 			<object class="NSMutableDictionary" key="localizations">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<reference key="dict.sortedKeys" ref="0"/>
+<<<<<<< HEAD
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 				</object>
+=======
+				<reference key="dict.values" ref="0"/>
+>>>>>>> bb2db1af1e35081c8bd6b25e1e229db34aa4136e
 			</object>
 			<nil key="sourceID"/>
 			<int key="maxID">4</int>
@@ -178,6 +200,7 @@
 					<string key="superclassName">UIViewController</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
+<<<<<<< HEAD
 						<string key="minorKey">RecipeRamblerBeta2/recipesView.h</string>
 					</object>
 				</object>
@@ -360,23 +383,34 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">UIKit.framework/Headers/UIViewController.h</string>
+=======
+						<string key="minorKey">./Classes/recipesView.h</string>
+>>>>>>> bb2db1af1e35081c8bd6b25e1e229db34aa4136e
 					</object>
 				</object>
 			</object>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
+<<<<<<< HEAD
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
 			<integer value="1056" key="NS.object.0"/>
 		</object>
+=======
+>>>>>>> bb2db1af1e35081c8bd6b25e1e229db34aa4136e
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDevelopmentDependencies">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.InterfaceBuilder3</string>
 			<integer value="3000" key="NS.object.0"/>
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
+<<<<<<< HEAD
 		<nil key="IBDocument.LastKnownRelativeProjectPath"/>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<string key="IBCocoaTouchPluginVersion">141</string>
+=======
+		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+		<string key="IBCocoaTouchPluginVersion">534</string>
+>>>>>>> bb2db1af1e35081c8bd6b25e1e229db34aa4136e
 	</data>
 </archive>

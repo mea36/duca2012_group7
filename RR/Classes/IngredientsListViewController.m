@@ -79,7 +79,7 @@
     }
     
     // Configure the cell...
-    cell.text = [ingredientsArray objectAtIndex:indexPath.row];
+    cell.text = @"hello";//[ingredientsArray objectAtIndex:indexPath.row];
     return cell;
 }
 

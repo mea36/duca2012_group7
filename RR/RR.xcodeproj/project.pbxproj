@@ -15,6 +15,16 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
+		899C37A815BD994A000973D9 /* EGODatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 899C37A115BD994A000973D9 /* EGODatabase.m */; };
+		899C37A915BD994A000973D9 /* EGODatabaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 899C37A315BD994A000973D9 /* EGODatabaseRequest.m */; };
+		899C37AA15BD994A000973D9 /* EGODatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 899C37A515BD994A000973D9 /* EGODatabaseResult.m */; };
+		899C37AB15BD994A000973D9 /* EGODatabaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 899C37A715BD994A000973D9 /* EGODatabaseRow.m */; };
+		899C37AE15BD997E000973D9 /* EgoDb.m in Sources */ = {isa = PBXBuildFile; fileRef = 899C37AD15BD997E000973D9 /* EgoDb.m */; };
+		899C37B615BD9A1D000973D9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 899C37B515BD9A1D000973D9 /* libsqlite3.dylib */; };
+		899C37BA15BD9A55000973D9 /* recpie_rambler.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 899C37B915BD9A55000973D9 /* recpie_rambler.sqlite3 */; };
+		899C381315BDA55A000973D9 /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 899C381015BDA55A000973D9 /* Ingredient.m */; };
+		899C381415BDA55A000973D9 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 899C381215BDA55A000973D9 /* Recipe.m */; };
+		899C626B15BDCBF30099927C /* rr.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 899C626A15BDCBF30099927C /* rr.sqlite3 */; };
 		89B7FCF515B8952D00F59E6D /* IngredientsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B7FCF315B8952D00F59E6D /* IngredientsListViewController.m */; };
 		89B7FCF615B8952D00F59E6D /* IngredientsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B7FCF415B8952D00F59E6D /* IngredientsListViewController.xib */; };
 /* End PBXBuildFile section */
@@ -32,6 +42,23 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		899C37A015BD994A000973D9 /* EGODatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabase.h; sourceTree = "<group>"; };
+		899C37A115BD994A000973D9 /* EGODatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabase.m; sourceTree = "<group>"; };
+		899C37A215BD994A000973D9 /* EGODatabaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRequest.h; sourceTree = "<group>"; };
+		899C37A315BD994A000973D9 /* EGODatabaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRequest.m; sourceTree = "<group>"; };
+		899C37A415BD994A000973D9 /* EGODatabaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseResult.h; sourceTree = "<group>"; };
+		899C37A515BD994A000973D9 /* EGODatabaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseResult.m; sourceTree = "<group>"; };
+		899C37A615BD994A000973D9 /* EGODatabaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRow.h; sourceTree = "<group>"; };
+		899C37A715BD994A000973D9 /* EGODatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRow.m; sourceTree = "<group>"; };
+		899C37AC15BD997E000973D9 /* EgoDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EgoDb.h; sourceTree = "<group>"; };
+		899C37AD15BD997E000973D9 /* EgoDb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EgoDb.m; sourceTree = "<group>"; };
+		899C37B515BD9A1D000973D9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		899C37B915BD9A55000973D9 /* recpie_rambler.sqlite3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = recpie_rambler.sqlite3; sourceTree = "<group>"; };
+		899C380F15BDA55A000973D9 /* Ingredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ingredient.h; sourceTree = "<group>"; };
+		899C381015BDA55A000973D9 /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingredient.m; sourceTree = "<group>"; };
+		899C381115BDA55A000973D9 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		899C381215BDA55A000973D9 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		899C626A15BDCBF30099927C /* rr.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rr.sqlite3; sourceTree = "<group>"; };
 		89B7FCF215B8952D00F59E6D /* IngredientsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientsListViewController.h; sourceTree = "<group>"; };
 		89B7FCF315B8952D00F59E6D /* IngredientsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientsListViewController.m; sourceTree = "<group>"; };
 		89B7FCF415B8952D00F59E6D /* IngredientsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientsListViewController.xib; sourceTree = "<group>"; };
@@ -46,6 +73,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				899C37B615BD9A1D000973D9 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +89,13 @@
 				1D3623250D0F684500981E51 /* RRAppDelegate.m */,
 				89B7FCF215B8952D00F59E6D /* IngredientsListViewController.h */,
 				89B7FCF315B8952D00F59E6D /* IngredientsListViewController.m */,
+				899C380F15BDA55A000973D9 /* Ingredient.h */,
+				899C381015BDA55A000973D9 /* Ingredient.m */,
+				899C381115BDA55A000973D9 /* Recipe.h */,
+				899C381215BDA55A000973D9 /* Recipe.m */,
 				89B7FCF415B8952D00F59E6D /* IngredientsListViewController.xib */,
+				899C37AC15BD997E000973D9 /* EgoDb.h */,
+				899C37AD15BD997E000973D9 /* EgoDb.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -77,6 +111,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				899C379F15BD9919000973D9 /* Database */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -98,6 +133,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				899C626A15BDCBF30099927C /* rr.sqlite3 */,
+				899C37B915BD9A55000973D9 /* recpie_rambler.sqlite3 */,
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* RR-Info.plist */,
@@ -111,8 +148,24 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				899C37B515BD9A1D000973D9 /* libsqlite3.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		899C379F15BD9919000973D9 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				899C37A015BD994A000973D9 /* EGODatabase.h */,
+				899C37A115BD994A000973D9 /* EGODatabase.m */,
+				899C37A215BD994A000973D9 /* EGODatabaseRequest.h */,
+				899C37A315BD994A000973D9 /* EGODatabaseRequest.m */,
+				899C37A415BD994A000973D9 /* EGODatabaseResult.h */,
+				899C37A515BD994A000973D9 /* EGODatabaseResult.m */,
+				899C37A615BD994A000973D9 /* EGODatabaseRow.h */,
+				899C37A715BD994A000973D9 /* EGODatabaseRow.m */,
+			);
+			name = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +221,8 @@
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
 				89B7FCF615B8952D00F59E6D /* IngredientsListViewController.xib in Resources */,
+				899C37BA15BD9A55000973D9 /* recpie_rambler.sqlite3 in Resources */,
+				899C626B15BDCBF30099927C /* rr.sqlite3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +237,13 @@
 				1D3623260D0F684500981E51 /* RRAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				89B7FCF515B8952D00F59E6D /* IngredientsListViewController.m in Sources */,
+				899C37A815BD994A000973D9 /* EGODatabase.m in Sources */,
+				899C37A915BD994A000973D9 /* EGODatabaseRequest.m in Sources */,
+				899C37AA15BD994A000973D9 /* EGODatabaseResult.m in Sources */,
+				899C37AB15BD994A000973D9 /* EGODatabaseRow.m in Sources */,
+				899C37AE15BD997E000973D9 /* EgoDb.m in Sources */,
+				899C381315BDA55A000973D9 /* Ingredient.m in Sources */,
+				899C381415BDA55A000973D9 /* Recipe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

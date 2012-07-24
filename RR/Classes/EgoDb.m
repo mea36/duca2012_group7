@@ -50,12 +50,15 @@ static EgoDb *db;
 	for(EGODatabaseRow* row in rs) {
 		NSString* name = [row stringForColumn:@"ING_NAME"];
 		NSString* units = @"";
+		NSString* ingredient_id = [row stringForColumn:@"ING_ID"]; 
+		//quantity
+
 		int quantity = [row intForColumn:@"QUANTITY"];
 
 		
-		//quantity
+	
 		//create an ingredient object
-		Ingredient *ing = [[Ingredient alloc] initWithName:name quantity:quantity withUnits:units];
+		Ingredient *ing = [[Ingredient alloc] initWithName:name ingredient_id:ingredient_id quantity:quantity withUnits:units];
 		
 		//goes through each row
 		[ingredientsList addObject: ing];
@@ -63,7 +66,7 @@ static EgoDb *db;
 	}
 
 	return ingredientsList;
-	
+		
 }
 - (void)dealloc {
 	[db close];

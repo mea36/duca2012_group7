@@ -7,13 +7,15 @@
 //
 
 #import "RootViewController.h"
-#import "ingredientsView.h"
+
+#import "mealTypeView.h"
 
 @implementation RootViewController
 
 -(IBAction)nextView:(id)sender
 {
-    ingredientsView *list = [[ingredientsView alloc] initWithNibName:@"ingredientsView" bundle:nil];
+    NSLog(@"trying to go to meal type");
+    mealTypeView *list = [[mealTypeView alloc] initWithNibName:@"mealTypeView" bundle:nil];
     //[self presentModalViewController:second animated:YES];
 	[self.navigationController pushViewController:list animated:YES];
 	[list release];
@@ -35,6 +37,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath {
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
     ingredientsArray =[[NSMutableArray alloc] init];
     [ingredientsArray addObject:@"Tomatoes"];
     [ingredientsArray addObject:@"Beef"];
@@ -45,7 +48,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath {
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;                                                 
     [backButton release];
-    [super viewDidLoad];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated

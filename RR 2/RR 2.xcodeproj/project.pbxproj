@@ -32,8 +32,10 @@
 		9E70670115BCBC3400475D47 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E7066FF15BCBC3400475D47 /* InfoPlist.strings */; };
 		9E70670315BCBC3400475D47 /* RR_2Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9E70670215BCBC3400475D47 /* RR_2Tests.h */; };
 		9E70670515BCBC3400475D47 /* RR_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E70670415BCBC3400475D47 /* RR_2Tests.m */; };
-		9E70671115BCBFBD00475D47 /* ingredientsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E70670F15BCBFBD00475D47 /* ingredientsView.m */; };
-		9E70671215BCBFBD00475D47 /* ingredientsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E70671015BCBFBD00475D47 /* ingredientsView.xib */; };
+		9EB6E2DD15BDE3CE00E00D86 /* mealTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6E2DB15BDE3CE00E00D86 /* mealTypeView.m */; };
+		9EB6E2DE15BDE3CE00E00D86 /* mealTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E2DC15BDE3CE00E00D86 /* mealTypeView.xib */; };
+		9EB6E2EC15BF262C00E00D86 /* recipesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6E2EA15BF262C00E00D86 /* recipesView.m */; };
+		9EB6E2ED15BF262C00E00D86 /* recipesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E2EB15BF262C00E00D86 /* recipesView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,9 +85,12 @@
 		9E70670015BCBC3400475D47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9E70670215BCBC3400475D47 /* RR_2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RR_2Tests.h; sourceTree = "<group>"; };
 		9E70670415BCBC3400475D47 /* RR_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RR_2Tests.m; sourceTree = "<group>"; };
-		9E70670E15BCBFBD00475D47 /* ingredientsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ingredientsView.h; path = ../ingredientsView.h; sourceTree = "<group>"; };
-		9E70670F15BCBFBD00475D47 /* ingredientsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ingredientsView.m; path = ../ingredientsView.m; sourceTree = "<group>"; };
-		9E70671015BCBFBD00475D47 /* ingredientsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ingredientsView.xib; path = ../ingredientsView.xib; sourceTree = "<group>"; };
+		9EB6E2DA15BDE3CE00E00D86 /* mealTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mealTypeView.h; path = ../mealTypeView.h; sourceTree = "<group>"; };
+		9EB6E2DB15BDE3CE00E00D86 /* mealTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mealTypeView.m; path = ../mealTypeView.m; sourceTree = "<group>"; };
+		9EB6E2DC15BDE3CE00E00D86 /* mealTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = mealTypeView.xib; path = ../mealTypeView.xib; sourceTree = "<group>"; };
+		9EB6E2E915BF262C00E00D86 /* recipesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = recipesView.h; path = ../recipesView.h; sourceTree = "<group>"; };
+		9EB6E2EA15BF262C00E00D86 /* recipesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = recipesView.m; path = ../recipesView.m; sourceTree = "<group>"; };
+		9EB6E2EB15BF262C00E00D86 /* recipesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = recipesView.xib; path = ../recipesView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

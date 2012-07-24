@@ -8,6 +8,8 @@
 
 #import "RRAppDelegate.h"
 #import "RootViewController.h"
+#import "EgoDb.h"
+#import "Ingredient.h"
 
 
 @implementation RRAppDelegate
@@ -26,6 +28,16 @@
     // Set the navigation controller as the window's root view controller and display.
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
+	
+	NSArray* ingredients = [[EgoDb database] getIngredientsList];
+	int i = 0;
+	for (i = 0; i < [ingredients count]; i++) {
+
+		NSLog(@"%@ - %d", [[ingredients objectAtIndex:i] name], [[ingredients objectAtIndex:i] quantity]);
+		
+	}
+
+
 
     return YES;
 }

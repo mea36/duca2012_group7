@@ -16,6 +16,7 @@
 	int prep_time;
 	NSArray *instructions;
 	int cooking_time;
+	NSString *BLD; 
 }
 
 @property(nonatomic,copy) NSString *name;

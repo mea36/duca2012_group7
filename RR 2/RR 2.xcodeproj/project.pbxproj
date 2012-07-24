@@ -450,6 +450,7 @@
 				9E70670A15BCBC3400475D47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E70670B15BCBC3400475D47 /* Build configuration list for PBXNativeTarget "RR 2Tests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +459,7 @@
 				9E70670D15BCBC3400475D47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

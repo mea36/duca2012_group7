@@ -14,6 +14,4 @@
 
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
 
--(IBAction)nextView:(id)sender;
-
 @end

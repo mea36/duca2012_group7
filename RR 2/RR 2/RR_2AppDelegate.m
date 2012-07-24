@@ -7,7 +7,7 @@
 //
 
 #import "RR_2AppDelegate.h"
-#import "ingredientsView.h"
+
 
 @implementation RR_2AppDelegate
 
@@ -23,13 +23,6 @@
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
-}
--(IBAction)nextView:(id)sender
-{
-    ingredientsView *list = [[ingredientsView alloc] initWithNibName:@"ingredientsView" bundle:nil];
-    //[self presentModalViewController:second animated:YES];
-	[self.navigationController pushViewController:list animated:YES];
-	[list release];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

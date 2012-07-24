@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89B65E8F15BF36320089C3AC /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B65E8A15BF36320089C3AC /* Ingredient.m */; };
+		89B65E9015BF36320089C3AC /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B65E8C15BF36320089C3AC /* Recipe.m */; };
+		89B65E9115BF36320089C3AC /* EgoDb.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B65E8E15BF36320089C3AC /* EgoDb.m */; };
+		89B65E9D15BF36620089C3AC /* EGODatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B65E9615BF36620089C3AC /* EGODatabase.m */; };
+		89B65E9E15BF36620089C3AC /* EGODatabaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B65E9815BF36620089C3AC /* EGODatabaseRequest.m */; };
+		89B65E9F15BF36620089C3AC /* EGODatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B65E9A15BF36620089C3AC /* EGODatabaseResult.m */; };
+		89B65EA015BF36620089C3AC /* EGODatabaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B65E9C15BF36620089C3AC /* EGODatabaseRow.m */; };
+		89B65EA515BF36850089C3AC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B65EA415BF36850089C3AC /* libsqlite3.dylib */; };
+		89B65EB715BF36B80089C3AC /* rr.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 89B65EB615BF36B80089C3AC /* rr.sqlite3 */; };
 		9E7066D515BCBC3400475D47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7066D415BCBC3300475D47 /* UIKit.framework */; };
 		9E7066D715BCBC3400475D47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7066D615BCBC3400475D47 /* Foundation.framework */; };
 		9E7066D915BCBC3400475D47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7066D815BCBC3400475D47 /* CoreGraphics.framework */; };
@@ -38,6 +47,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89B65E8915BF36320089C3AC /* Ingredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ingredient.h; sourceTree = "<group>"; };
+		89B65E8A15BF36320089C3AC /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingredient.m; sourceTree = "<group>"; };
+		89B65E8B15BF36320089C3AC /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		89B65E8C15BF36320089C3AC /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		89B65E8D15BF36320089C3AC /* EgoDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EgoDb.h; sourceTree = "<group>"; };
+		89B65E8E15BF36320089C3AC /* EgoDb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EgoDb.m; sourceTree = "<group>"; };
+		89B65E9515BF36620089C3AC /* EGODatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabase.h; sourceTree = "<group>"; };
+		89B65E9615BF36620089C3AC /* EGODatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabase.m; sourceTree = "<group>"; };
+		89B65E9715BF36620089C3AC /* EGODatabaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRequest.h; sourceTree = "<group>"; };
+		89B65E9815BF36620089C3AC /* EGODatabaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRequest.m; sourceTree = "<group>"; };
+		89B65E9915BF36620089C3AC /* EGODatabaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseResult.h; sourceTree = "<group>"; };
+		89B65E9A15BF36620089C3AC /* EGODatabaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseResult.m; sourceTree = "<group>"; };
+		89B65E9B15BF36620089C3AC /* EGODatabaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRow.h; sourceTree = "<group>"; };
+		89B65E9C15BF36620089C3AC /* EGODatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRow.m; sourceTree = "<group>"; };
+		89B65EA415BF36850089C3AC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		89B65EB615BF36B80089C3AC /* rr.sqlite3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rr.sqlite3; sourceTree = "<group>"; };
 		9E7066D015BCBC3300475D47 /* RR 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RR 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7066D415BCBC3300475D47 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9E7066D615BCBC3400475D47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +96,7 @@
 				9E7066D515BCBC3400475D47 /* UIKit.framework in Frameworks */,
 				9E7066D715BCBC3400475D47 /* Foundation.framework in Frameworks */,
 				9E7066D915BCBC3400475D47 /* CoreGraphics.framework in Frameworks */,
+				89B65EA515BF36850089C3AC /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +114,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89B65E9415BF36620089C3AC /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				89B65E9515BF36620089C3AC /* EGODatabase.h */,
+				89B65E9615BF36620089C3AC /* EGODatabase.m */,
+				89B65E9715BF36620089C3AC /* EGODatabaseRequest.h */,
+				89B65E9815BF36620089C3AC /* EGODatabaseRequest.m */,
+				89B65E9915BF36620089C3AC /* EGODatabaseResult.h */,
+				89B65E9A15BF36620089C3AC /* EGODatabaseResult.m */,
+				89B65E9B15BF36620089C3AC /* EGODatabaseRow.h */,
+				89B65E9C15BF36620089C3AC /* EGODatabaseRow.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
 		9E7066C515BCBC3300475D47 = {
 			isa = PBXGroup;
 			children = (
+				89B65E9415BF36620089C3AC /* Database */,
 				9E7066DA15BCBC3400475D47 /* RR 2 */,
 				9E7066FC15BCBC3400475D47 /* RR 2Tests */,
 				9E7066D315BCBC3300475D47 /* Frameworks */,
@@ -114,6 +156,7 @@
 				9E7066D615BCBC3400475D47 /* Foundation.framework */,
 				9E7066D815BCBC3400475D47 /* CoreGraphics.framework */,
 				9E7066F515BCBC3400475D47 /* SenTestingKit.framework */,
+				89B65EA415BF36850089C3AC /* libsqlite3.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,6 +164,13 @@
 		9E7066DA15BCBC3400475D47 /* RR 2 */ = {
 			isa = PBXGroup;
 			children = (
+				89B65EB615BF36B80089C3AC /* rr.sqlite3 */,
+				89B65E8915BF36320089C3AC /* Ingredient.h */,
+				89B65E8A15BF36320089C3AC /* Ingredient.m */,
+				89B65E8B15BF36320089C3AC /* Recipe.h */,
+				89B65E8C15BF36320089C3AC /* Recipe.m */,
+				89B65E8D15BF36320089C3AC /* EgoDb.h */,
+				89B65E8E15BF36320089C3AC /* EgoDb.m */,
 				9E70670E15BCBFBD00475D47 /* ingredientsView.h */,
 				9E70670F15BCBFBD00475D47 /* ingredientsView.m */,
 				9E70671015BCBFBD00475D47 /* ingredientsView.xib */,
@@ -236,6 +286,7 @@
 				9E7066E815BCBC3400475D47 /* MainWindow.xib in Resources */,
 				9E7066EE15BCBC3400475D47 /* RootViewController.xib in Resources */,
 				9E70671215BCBFBD00475D47 /* ingredientsView.xib in Resources */,
+				89B65EB715BF36B80089C3AC /* rr.sqlite3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +326,13 @@
 				9E7066E515BCBC3400475D47 /* RR_2AppDelegate.m in Sources */,
 				9E7066EB15BCBC3400475D47 /* RootViewController.m in Sources */,
 				9E70671115BCBFBD00475D47 /* ingredientsView.m in Sources */,
+				89B65E8F15BF36320089C3AC /* Ingredient.m in Sources */,
+				89B65E9015BF36320089C3AC /* Recipe.m in Sources */,
+				89B65E9115BF36320089C3AC /* EgoDb.m in Sources */,
+				89B65E9D15BF36620089C3AC /* EGODatabase.m in Sources */,
+				89B65E9E15BF36620089C3AC /* EGODatabaseRequest.m in Sources */,
+				89B65E9F15BF36620089C3AC /* EGODatabaseResult.m in Sources */,
+				89B65EA015BF36620089C3AC /* EGODatabaseRow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

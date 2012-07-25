@@ -7,6 +7,7 @@
 //
 
 #import "recipesView.h"
+#import "chosenRecipe.h"
 
 @interface recipesView ()
 
@@ -26,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Recipes";
     recipesList =[[NSMutableArray alloc] init];
     [recipesList addObject:@"Hamburgers"];
     //[ingredientsArray addObject:@"Beef"];
@@ -72,8 +74,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }    
     // Configure the cell...
     cell.textLabel.text = [recipesList objectAtIndex:indexPath.row];
     return cell;
@@ -122,6 +127,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
@@ -130,6 +138,9 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+    chosenRecipe* nextView = [[chosenRecipe alloc] initWithNibName:@"chosenRecipe" bundle:nil];
+    [self.navigationController pushViewController:nextView animated:YES];
+    [nextView release];
 }
 
 @end

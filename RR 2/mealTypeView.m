@@ -7,6 +7,7 @@
 //
 
 #import "mealTypeView.h"
+#import "recipesView.h"
 
 @interface mealTypeView ()
 
@@ -15,8 +16,6 @@
 @implementation mealTypeView
 
 @synthesize mealCategories;
-
-
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -33,7 +32,7 @@
     [super viewDidLoad];
 
     NSLog(@"view did load - mealtype");
-    
+    self.title = @"Meal Type";
     mealCategories =[[NSMutableArray alloc] init];
     [mealCategories addObject:@"Breakfast"];
     [mealCategories addObject:@"Lunch"];
@@ -134,19 +133,32 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
+    
+   // [tableView deselectRowAtIndexPath:indexPath animated:YES];
     /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
+    if ([[mealCategories objectAtIndex:indexPath.row] isEqual:@"Breakfast"]) {
+        recipesView *Recipesview = [[recipesView alloc] initWithNibName:@"recipesView" bundle:nil];
+        [self.navigationController pushViewController:Recipesview animated:YES];
+    }
+    else if ([[mealCategories objectAtIndex:indexPath.row] isEqual:@"Lunch"]) {
+        recipesView *Recipesview2 = [[recipesView alloc] initWithNibName:@"recipesView" bundle:nil];
+        [self.navigationController pushViewController:Recipesview2 animated:YES];
+    }
+    else if ([[mealCategories objectAtIndex:indexPath.row] isEqual:@"Dinner"]) {
+        recipesView *Recipesview3 = [[recipesView alloc] initWithNibName:@"recipesView" bundle:nil];
+        [self.navigationController pushViewController:Recipesview3 animated:YES];
+    }
      */
+    recipesView* nextView = [[recipesView alloc] initWithNibName:@"recipesView" bundle:nil];
+    [self.navigationController pushViewController:nextView animated:YES];
+    [nextView release];
+    
 }
 
 -(void) dealloc
 {
     [mealCategories release];
+    [super dealloc];
 }
 
 @end

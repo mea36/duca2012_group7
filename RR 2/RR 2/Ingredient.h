@@ -17,7 +17,7 @@
 }
 
 @property(nonatomic,retain) NSString *name;
-@property(nonatomic,assign) NSString *ingredient_id;
+@property(nonatomic,retain) NSString *ingredient_id;
 @property(nonatomic,assign) int quantity;
 @property(nonatomic,retain) NSString *units;
 

@@ -31,4 +31,9 @@
 	[super dealloc];
 }
 
+-(NSString*) toString
+{
+    return self.ingredient_id;
+}
+
 @end

@@ -13,6 +13,6 @@
     NSArray *recipesList;
 }
 
-@property (nonatomic, retain) NSArray *recipesList;
+@property (nonatomic, retain) NSArray* recipesList;
 
 @end

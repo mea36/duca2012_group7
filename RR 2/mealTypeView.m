@@ -8,6 +8,8 @@
 
 #import "mealTypeView.h"
 #import "recipesView.h"
+#import "RootViewController.h"
+#import "EgoDb.h"
 
 @interface mealTypeView ()
 
@@ -15,7 +17,7 @@
 
 @implementation mealTypeView
 
-@synthesize mealCategories;
+@synthesize mealCategories, ingredientsList;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -34,6 +36,7 @@
     NSLog(@"view did load - mealtype");
     self.title = @"Meal Type";
     mealCategories =[[NSArray alloc] initWithObjects:@"Breakfast", @"Lunch", @"Dinner",nil];
+
     //[mealCategories addObject:@"Breakfast"];
     //[mealCategories addObject:@"Lunch"];
     //[mealCategories addObject:@"Dinner"];
@@ -74,7 +77,7 @@
 {
     NSLog(@"have %d rows in mealtype", mealCategories.count);
     // Return the number of rows in the section.
-    return mealCategories.count;
+    return self.mealCategories.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -150,7 +153,10 @@
         [self.navigationController pushViewController:Recipesview3 animated:YES];
     }
      */
+    
     recipesView* nextView = [[recipesView alloc] initWithNibName:@"recipesView" bundle:nil];
+    nextView.recipesList = [[EgoDb database] getRecipesForIngredients:self.ingredientsList];
+
     [self.navigationController pushViewController:nextView animated:YES];
     [nextView release];
     
@@ -159,6 +165,7 @@
 -(void) dealloc
 {
     [mealCategories release];
+    [ingredientsList release];
     [super dealloc];
 }
 

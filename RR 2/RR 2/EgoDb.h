@@ -19,6 +19,6 @@
 - (void)createEditableCopyOfDatabaseIfNeeded;
 //other methods for the db will go here
 - (NSArray*) getIngredientsList;
-
+- (NSArray*) getRecipesForIngredients: (NSArray*) ingredientsList;
 
 @end

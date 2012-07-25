@@ -32,8 +32,8 @@
 {
     [super viewDidLoad];
     self.title = @"Recipes";
-    recipesList =[[NSArray alloc] init];
-    self.recipesList = [[EgoDb database] getIngredientsList];
+   // recipesList =[[NSArray alloc] init];
+   // self.recipesList = [[EgoDb database] getRecipesForIngredients];
     //[recipesList addObject:@"Hamburgers"];
     //[ingredientsArray addObject:@"Beef"];
     //[ingredientsArray addObject:@"Cheese"];
@@ -86,7 +86,7 @@
     }    
     // Configure the cell...
     cell.textLabel.text = [(Recipe*)[self.recipesList objectAtIndex:indexPath.row] name];
-    //cell.textLabel.text = [recipesList objectAtIndex:indexPath.row];
+    
     return cell;
 }
 
@@ -144,7 +144,7 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
-    chosenRecipe* nextView = [[chosenRecipe alloc] initWithNibName:@"chosenRecipe" bundle:nil];
+    chosenRecipe* nextView = [[chosenRecipe alloc] initWithNibName:@"recipesView" bundle:nil];
     [self.navigationController pushViewController:nextView animated:YES];
     [nextView release];
 }
@@ -154,6 +154,5 @@
     [recipesList release];
     [super dealloc];
 }
-
 
 @end

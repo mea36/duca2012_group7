@@ -10,9 +10,9 @@
 
 @interface mealTypeView : UITableViewController <UITableViewDelegate, UITableViewDataSource>{
     NSArray *mealCategories;
+    NSArray *ingredientsList;
 }
 
-
-
+@property (nonatomic, retain) NSArray *ingredientsList;
 @property (nonatomic, retain) NSArray *mealCategories;
 @end

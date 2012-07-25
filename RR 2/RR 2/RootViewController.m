@@ -16,12 +16,12 @@
 
 -(IBAction)nextView:(id)sender
 {
-    //1. create array of that contains all ingredients that are checked ()
-    //2. add an array similar to ingredientsList on mealTypeView 
     //3. before pushing to recipes view, use db to find list of recipes
     //4. push that list to recipesview
     NSLog(@"trying to go to meal type");
     mealTypeView *list = [[mealTypeView alloc] initWithNibName:@"mealTypeView" bundle:nil];
+    list.ingredientsList = self.selectedIngredients;
+
 	[self.navigationController pushViewController:list animated:YES];
     /*
     int i;

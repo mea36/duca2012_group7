@@ -7,10 +7,12 @@
 //
 
 #import "RootViewController.h"
-
+#import "EgoDb.h"
 #import "mealTypeView.h"
+#import "Ingredient.h"
 
 @implementation RootViewController
+@synthesize ingredientsArray;
 
 -(IBAction)nextView:(id)sender
 {
@@ -38,13 +40,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath {
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    ingredientsArray =[[NSMutableArray alloc] init];
-    [ingredientsArray addObject:@"Tomatoes"];
-    [ingredientsArray addObject:@"Beef"];
-    [ingredientsArray addObject:@"Cheese"];
-    [ingredientsArray addObject:@"Bread"];
-    [ingredientsArray addObject:@"Eggs"];
-    [ingredientsArray addObject:@"Chicken"];
+    
+    ingredientsArray =[[EgoDb database] getIngredientsList];
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;                                                 
     [backButton release];
@@ -101,7 +98,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath {
     }
 
     // Configure the cell.
-    cell.textLabel.text = [ingredientsArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [(Ingredient*)[ingredientsArray objectAtIndex:indexPath.row] name];
     return cell;
 }
 
@@ -175,6 +172,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath {
 
 - (void)dealloc
 {
+    [ingredientsArray release];
     [super dealloc];
 }
 

@@ -23,7 +23,7 @@ static EgoDb *db;
 }
 - (id)init {
 	NSLog(@"%@", NSHomeDirectory());
-	if((self = [super initWithPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/rr.sqlite3"]])) {
+	if((self = [super initWithPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/rr1.sqlite3"]])) {
 		[self createEditableCopyOfDatabaseIfNeeded];
 		if (![self open]) {
 			NSLog(@"Could not open db.");
@@ -33,10 +33,10 @@ static EgoDb *db;
 }
 
 - (void)createEditableCopyOfDatabaseIfNeeded {
-	NSString* writeablePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/rr.sqlite3"];
+	NSString* writeablePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/rr1.sqlite3"];
 	
 	if(![[NSFileManager defaultManager] fileExistsAtPath:writeablePath]) {
-		[[NSFileManager defaultManager] copyItemAtPath:[[NSBundle mainBundle] pathForResource:@"rr" ofType:@"sqlite3"] toPath:writeablePath error:NULL];
+		[[NSFileManager defaultManager] copyItemAtPath:[[NSBundle mainBundle] pathForResource:@"rr1" ofType:@"sqlite3"] toPath:writeablePath error:NULL];
 	}
 	
 }

@@ -15,11 +15,6 @@
 		89B65E9F15BF36620089C3AC /* EGODatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B65E9A15BF36620089C3AC /* EGODatabaseResult.m */; };
 		89B65EA015BF36620089C3AC /* EGODatabaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B65E9C15BF36620089C3AC /* EGODatabaseRow.m */; };
 		89B65EA515BF36850089C3AC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B65EA415BF36850089C3AC /* libsqlite3.dylib */; };
-		89B65EB715BF36B80089C3AC /* rr.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 89B65EB615BF36B80089C3AC /* rr.sqlite3 */; };
-		89B65EDA15BF38480089C3AC /* mealTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B65ED915BF38480089C3AC /* mealTypeView.m */; };
-		89B65EDF15BF38750089C3AC /* mealTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B65EDB15BF38750089C3AC /* mealTypeView.xib */; };
-		89B65EE015BF38750089C3AC /* recipesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B65EDD15BF38750089C3AC /* recipesView.m */; };
-		89B65EE115BF38750089C3AC /* recipesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B65EDE15BF38750089C3AC /* recipesView.xib */; };
 		9E7066D515BCBC3400475D47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7066D415BCBC3300475D47 /* UIKit.framework */; };
 		9E7066D715BCBC3400475D47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7066D615BCBC3400475D47 /* Foundation.framework */; };
 		9E7066D915BCBC3400475D47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7066D815BCBC3400475D47 /* CoreGraphics.framework */; };
@@ -42,6 +37,9 @@
 		9EB6E30315BF383400E00D86 /* recipesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E2FF15BF383400E00D86 /* recipesView.xib */; };
 		9EB6E30815C034FF00E00D86 /* chosenRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6E30615C034FE00E00D86 /* chosenRecipe.m */; };
 		9EB6E30915C034FF00E00D86 /* chosenRecipe.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E30715C034FF00E00D86 /* chosenRecipe.xib */; };
+		9EB6E31015C0470400E00D86 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E30F15C0470400E00D86 /* icon.png */; };
+		9EB6E31215C04BB000E00D86 /* rr1.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E31115C04BAF00E00D86 /* rr1.sqlite3 */; };
+		9EB6E31415C04CF800E00D86 /* rr.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E31315C04CF800E00D86 /* rr.sqlite3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,13 +68,6 @@
 		89B65E9B15BF36620089C3AC /* EGODatabaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRow.h; sourceTree = "<group>"; };
 		89B65E9C15BF36620089C3AC /* EGODatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRow.m; sourceTree = "<group>"; };
 		89B65EA415BF36850089C3AC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		89B65EB615BF36B80089C3AC /* rr.sqlite3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rr.sqlite3; sourceTree = "<group>"; };
-		89B65ED415BF38160089C3AC /* mealTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mealTypeView.h; sourceTree = "<group>"; };
-		89B65ED915BF38480089C3AC /* mealTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mealTypeView.m; sourceTree = "<group>"; };
-		89B65EDB15BF38750089C3AC /* mealTypeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mealTypeView.xib; sourceTree = "<group>"; };
-		89B65EDC15BF38750089C3AC /* recipesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recipesView.h; sourceTree = "<group>"; };
-		89B65EDD15BF38750089C3AC /* recipesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recipesView.m; sourceTree = "<group>"; };
-		89B65EDE15BF38750089C3AC /* recipesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = recipesView.xib; sourceTree = "<group>"; };
 		9E7066D015BCBC3300475D47 /* RR 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RR 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7066D415BCBC3300475D47 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9E7066D615BCBC3400475D47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +97,9 @@
 		9EB6E30515C034FE00E00D86 /* chosenRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chosenRecipe.h; sourceTree = "<group>"; };
 		9EB6E30615C034FE00E00D86 /* chosenRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chosenRecipe.m; sourceTree = "<group>"; };
 		9EB6E30715C034FF00E00D86 /* chosenRecipe.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = chosenRecipe.xib; sourceTree = "<group>"; };
+		9EB6E30F15C0470400E00D86 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../../Downloads/icon.png; sourceTree = "<group>"; };
+		9EB6E31115C04BAF00E00D86 /* rr1.sqlite3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rr1.sqlite3; sourceTree = "<group>"; };
+		9EB6E31315C04CF800E00D86 /* rr.sqlite3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rr.sqlite3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +178,8 @@
 		9E7066DA15BCBC3400475D47 /* RR 2 */ = {
 			isa = PBXGroup;
 			children = (
+				9EB6E31315C04CF800E00D86 /* rr.sqlite3 */,
+				9EB6E31115C04BAF00E00D86 /* rr1.sqlite3 */,
 				9EB6E30515C034FE00E00D86 /* chosenRecipe.h */,
 				9EB6E30615C034FE00E00D86 /* chosenRecipe.m */,
 				9EB6E30715C034FF00E00D86 /* chosenRecipe.xib */,
@@ -193,7 +189,6 @@
 				9EB6E2FD15BF383400E00D86 /* recipesView.h */,
 				9EB6E2FE15BF383400E00D86 /* recipesView.m */,
 				9EB6E2FF15BF383400E00D86 /* recipesView.xib */,
-				89B65EB615BF36B80089C3AC /* rr.sqlite3 */,
 				89B65E8915BF36320089C3AC /* Ingredient.h */,
 				89B65E8A15BF36320089C3AC /* Ingredient.m */,
 				89B65E8B15BF36320089C3AC /* Recipe.h */,
@@ -214,6 +209,7 @@
 		9E7066DB15BCBC3400475D47 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9EB6E30F15C0470400E00D86 /* icon.png */,
 				9E7066DC15BCBC3400475D47 /* RR 2-Info.plist */,
 				9E7066DD15BCBC3400475D47 /* InfoPlist.strings */,
 				9E7066E015BCBC3400475D47 /* main.m */,
@@ -311,10 +307,12 @@
 				9E7066DF15BCBC3400475D47 /* InfoPlist.strings in Resources */,
 				9E7066E815BCBC3400475D47 /* MainWindow.xib in Resources */,
 				9E7066EE15BCBC3400475D47 /* RootViewController.xib in Resources */,
-				89B65EB715BF36B80089C3AC /* rr.sqlite3 in Resources */,
 				9EB6E30115BF383400E00D86 /* mealTypeView.xib in Resources */,
 				9EB6E30315BF383400E00D86 /* recipesView.xib in Resources */,
 				9EB6E30915C034FF00E00D86 /* chosenRecipe.xib in Resources */,
+				9EB6E31015C0470400E00D86 /* icon.png in Resources */,
+				9EB6E31215C04BB000E00D86 /* rr1.sqlite3 in Resources */,
+				9EB6E31415C04CF800E00D86 /* rr.sqlite3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +437,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -456,7 +454,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

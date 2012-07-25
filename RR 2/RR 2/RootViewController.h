@@ -10,9 +10,9 @@
 
 @interface RootViewController : UITableViewController
 {
-    NSMutableArray *ingredientsArray;
+    NSArray *ingredientsArray;
 }
-
+@property (nonatomic, retain) NSArray* ingredientsArray;
 -(IBAction)nextView:(id)sender;
 
 @end

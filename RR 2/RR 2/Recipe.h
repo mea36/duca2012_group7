@@ -16,7 +16,9 @@
 	int prep_time;
 	NSArray *instructions;
 	int cooking_time;
-	NSString *BLD; 
+	int recipeid;
+	int difficulty;
+	NSString *BLD;
 }
 
 @property(nonatomic,copy) NSString *name;
@@ -24,7 +26,10 @@
 @property(nonatomic,assign) int prep_time;
 @property(nonatomic,copy) NSArray *instructions;
 @property(nonatomic,assign) int cooking_time;
+@property(nonatomic,assign) int recipeid;
+@property(nonatomic,assign) int difficulty;
+@property(nonatomic,copy) NSString *BLD;
 
--(id)initWithName:(NSString*)n ingredients_list:(NSArray*)ing prep_time:(int)prep instructions:(NSArray*)inst cooking_time:(int)cook;
+-(id)initWithName:(NSString*)n ingredients_list:(NSArray*)ing prep_time:(int)prep instructions:(NSArray*)inst cooking_time:(int)cook recipeid:(int)R_ID difficulty:(int)DIFFICULTY BLD:(NSString*)BLD ;
 
 @end

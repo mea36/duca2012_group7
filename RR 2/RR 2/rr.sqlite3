@@ -1,37 +1,95 @@
 DROP TABLE IF EXISTS "INGREDIENTS";
-CREATE TABLE "INGREDIENTS" ("ING_ID" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL , "ING_NAME" VARCHAR NOT NULL , "QUANTITY" INTEGER);
-INSERT INTO "INGREDIENTS" VALUES(1,'Pepper',1);
-INSERT INTO "INGREDIENTS" VALUES(2,'Cloves of Garlic',2);
-INSERT INTO "INGREDIENTS" VALUES(3,'Onion',1);
-INSERT INTO "INGREDIENTS" VALUES(4,'Lean Beef',1);
-INSERT INTO "INGREDIENTS" VALUES(5,'Slices Pepperjack Cheese',4);
-INSERT INTO "INGREDIENTS" VALUES(6,'Hamburger Buns',4);
-INSERT INTO "INGREDIENTS" VALUES(7,'Rum',1);
-INSERT INTO "INGREDIENTS" VALUES(8,'Coconut Cream',4);
-INSERT INTO "INGREDIENTS" VALUES(9,'Pineapples',3);
-INSERT INTO "INGREDIENTS" VALUES(10,'Macaroni',8);
-INSERT INTO "INGREDIENTS" VALUES(11,'Tomatoes',1);
-INSERT INTO "INGREDIENTS" VALUES(12,'Cheddar Cheese',8);
-INSERT INTO "INGREDIENTS" VALUES(13,'Cooking Oats',7);
-INSERT INTO "INGREDIENTS" VALUES(14,'Wheat Germ',1);
-INSERT INTO "INGREDIENTS" VALUES(15,'Wheat Bran',1);
-INSERT INTO "INGREDIENTS" VALUES(16,'Brown Sugar','1/2');
-INSERT INTO "INGREDIENTS" VALUES(17,'Vegetable Oil','1/2');
-INSERT INTO "INGREDIENTS" VALUES(18,'Honey','1/2');
-INSERT INTO "INGREDIENTS" VALUES(19,'Water','1/2');
-INSERT INTO "INGREDIENTS" VALUES(20,'Vanilla Extract',1);
-INSERT INTO "INGREDIENTS" VALUES(21,'Ground Cinnamon',1);
-INSERT INTO "INGREDIENTS" VALUES(22,'Ground Nutmeg',1);
-INSERT INTO "INGREDIENTS" VALUES(23,'Salt',1);
-INSERT INTO "INGREDIENTS" VALUES(24,'Chopped Dates',1);
-INSERT INTO "INGREDIENTS" VALUES(25,'Chopped Peacans',1);
-INSERT INTO "INGREDIENTS" VALUES(26,'Flaked Coconut ',1);
+CREATE TABLE "INGREDIENTS" ("ING_ID" INTEGER PRIMARY KEY  NOT NULL ,"ING_NAME" VARCHAR NOT NULL);
+INSERT INTO "INGREDIENTS" VALUES(1,'Green Pepper');
+INSERT INTO "INGREDIENTS" VALUES(2,'Cloves of Garlic');
+INSERT INTO "INGREDIENTS" VALUES(3,'Onion');
+INSERT INTO "INGREDIENTS" VALUES(4,'Lean Beef',);
+INSERT INTO "INGREDIENTS" VALUES(5,'Slices Pepperjack Cheese');
+INSERT INTO "INGREDIENTS" VALUES(6,'Hamburger Buns');
+INSERT INTO "INGREDIENTS" VALUES(7,'Rum');
+INSERT INTO "INGREDIENTS" VALUES(8,'Coconut Cream');
+INSERT INTO "INGREDIENTS" VALUES(9,'Pineapples');
+INSERT INTO "INGREDIENTS" VALUES(10,'Macaroni');
+INSERT INTO "INGREDIENTS" VALUES(11,'Tomatoes');
+INSERT INTO "INGREDIENTS" VALUES(12,'Cheddar Cheese');
+INSERT INTO "INGREDIENTS" VALUES(13,'Cooking Oats');
+INSERT INTO "INGREDIENTS" VALUES(14,'Wheat Germ');
+INSERT INTO "INGREDIENTS" VALUES(15,'Wheat Bran');
+INSERT INTO "INGREDIENTS" VALUES(16,'Brown Sugar');
+INSERT INTO "INGREDIENTS" VALUES(17,'Vegetable Oil');
+INSERT INTO "INGREDIENTS" VALUES(18,'Honey');
+INSERT INTO "INGREDIENTS" VALUES(19,'Water');
+INSERT INTO "INGREDIENTS" VALUES(20,'Vanilla Extract');
+INSERT INTO "INGREDIENTS" VALUES(21,'Ground Cinnamon');
+INSERT INTO "INGREDIENTS" VALUES(22,'Ground Nutmeg');
+INSERT INTO "INGREDIENTS" VALUES(23,'Sea Salt');
+INSERT INTO "INGREDIENTS" VALUES(24,'Chopped Dates');
+INSERT INTO "INGREDIENTS" VALUES(25,'Chopped Peacans');
+INSERT INTO "INGREDIENTS" VALUES(26,'Flaked Coconut');
+INSERT INTO "INGREDIENTS" VALUES(27,'Butter');
+INSERT INTO "INGREDIENTS" VALUES(28,'Rice');
+INSERT INTO "INGREDIENTS" VALUES(29,'Teriyaki Sauce';
+INSERT INTO "INGREDIENTS" VALUES(30,'Parsley');
+INSERT INTO "INGREDIENTS" VALUES(31,'Garlic Powder');
+INSERT INTO "INGREDIENTS" VALUES(32,'Egg');
+INSERT INTO "INGREDIENTS" VALUES(33,'Chicken');
+INSERT INTO "INGREDIENTS" VALUES(34,'Celery');
+INSERT INTO "INGREDIENTS" VALUES(35,'Carrots');
+INSERT INTO "INGREDIENTS" VALUES(36,'Egg Noodles');
+INSERT INTO "INGREDIENTS" VALUES(37,'Chicken Bouillon');
+INSERT INTO "INGREDIENTS" VALUES(38,'Marjoram');
+INSERT INTO "INGREDIENTS" VALUES(39,'Ground Black Pepper');
+INSERT INTO "INGREDIENTS" VALUES(40,'Bay Leaf');
+INSERT INTO "INGREDIENTS" VALUES(41,'Filet Mignon Steaks');
+INSERT INTO "INGREDIENTS" VALUES(42,'Olive Oil');
+INSERT INTO "INGREDIENTS" VALUES(43,'Balsamic Vinegar');
+INSERT INTO "INGREDIENTS" VALUES(44,'Dijon Mustard');
+INSERT INTO "INGREDIENTS" VALUES(45,'Rosemary');
+INSERT INTO "INGREDIENTS" VALUES(46,'Brown Sugar');
+INSERT INTO "INGREDIENTS" VALUES(47,'Blue Cheese');
+INSERT INTO "INGREDIENTS" VALUES(48,'Saltine Crackers');
+INSERT INTO "INGREDIENTS" VALUES(49,'Flour');
+INSERT INTO "INGREDIENTS" VALUES(50,'Dry Potato Flakes');
+INSERT INTO "INGREDIENTS" VALUES(51,'Turkey');
+INSERT INTO "INGREDIENTS" VALUES(52,'Chili Sauce');
+INSERT INTO "INGREDIENTS" VALUES(53,'White Vinegar');
+INSERT INTO "INGREDIENTS" VALUES(54,'Oregano');
+INSERT INTO "INGREDIENTS" VALUES(55,'Beef Bouillon');
+INSERT INTO "INGREDIENTS" VALUES(56,'Rolls');
+INSERT INTO "INGREDIENTS" VALUES(57,'Sausage');
+INSERT INTO "INGREDIENTS" VALUES(58,'Pizza Crust');
+INSERT INTO "INGREDIENTS" VALUES(59,'Tomato Sauce');
+INSERT INTO "INGREDIENTS" VALUES(60,'Mozzarella Cheese');
 DROP TABLE IF EXISTS "RECIPE";
-CREATE TABLE "RECIPE" ("RECIPE_NAME" VARCHAR NOT NULL ,"DIFFICULTY" INTEGER NOT NULL ,"BLD" Varchar NOT NULL ,"CULTURE" VARCHAR NOT NULL ,"PREP_TIME" CHAR NOT NULL ,"R_ID" INTEGER PRIMARY KEY  NOT NULL );
-INSERT INTO "RECIPE" VALUES('Jalapeno-Garlic Onion Cheese Burgers',1,'Lunch','American','25 Min',1);
-INSERT INTO "RECIPE" VALUES('Pina Colada',2,'Lunch','Puerto Rican','15 ',2);
-INSERT INTO "RECIPE" VALUES('Danny''s Macaroni and Cheese',1,'Breakfast','American ','40 ',3);
-INSERT INTO "RECIPE" VALUES('Oatmeal',1,'Breakfast','American','130',4);
+CREATE TABLE "RECIPE" ("RECIPE_NAME" VARCHAR NOT NULL ,"DIFFICULTY" INTEGER NOT NULL ,"BLD" Varchar NOT NULL ,"CULTURE" VARCHAR NOT NULL ,"PREP_TIME" CHAR NOT NULL ,"R_ID" INTEGER PRIMARY KEY  NOT NULL , "INSTR" TEXT);
+INSERT INTO "RECIPE" VALUES('Jalapeno-Garlic Onion Cheese Burgers',1,'Lunch','American','25 Min',1,'1. Preheat grill for high heat.
+Mix jalapeno pepper, garlic, onion, and ground beef in a medium bowl. Form into four patties.
+Brush grill grate with oil. Grill hamburger patties 5 minutes per side, or until well done. Top with pepperjack cheese, and serve on buns.');
+INSERT INTO "RECIPE" VALUES('Pina Colada',2,'Lunch','Puerto Rican','15 ',2,'1. Put all ingredients into an electric blender with 2 cups of crushed ice. Blend at a high speed for a short length of time. Strain into a collins glass and serve with a straw.');
+INSERT INTO "RECIPE" VALUES('Danny''s Macaroni and Cheese',1,'Breakfast','American ','40 ',3,'1. Preheat oven to 350 degrees F (175 degrees C).
+Bring a large pot of lightly salted water to a boil. Add macaroni and cook until almost done, about 8 minutes; drain.
+Mix cooked macaroni with tomatoes and shredded cheese. Pour into a baking dish and bake in a preheated oven for 30 minutes.');
+INSERT INTO "RECIPE" VALUES('Oatmeal',1,'Breakfast','American','130',4,'1. Preheat oven to 275 degrees F (135 degrees C).
+In a large bowl, mix oats, wheat germ, and wheat bran.
+In a medium bowl, blend brown sugar, vegetable oil, honey, and water. Mix in vanilla extract, cinnamon, nutmeg, and salt. Stir the brown sugar mixture into the oat mixture until evenly moist, and transfer to a large, shallow baking dish.
+Bake 45 minutes in the preheated oven, stirring every 15 minutes, until lightly brown. Mix dates, pecans, and coconut into the dish, and continue baking about 15 minutes. Allow to cool, and store in airtight containers.');
+INSERT INTO "RECIPE" VALUES('Fried Rice',1,'Dinner','Asian','15',5,'1. In a saucepan, combine rice and water. Bring to a boil. Reduce heat, cover, and simmer for 20 minutes.
+In a small saucepan, boil carrots in water about 3 to 5 minutes. Drop peas into boiling water, and drain.
+Heat wok over high heat. Pour in oil, then stir in carrots and peas; cook about 30 seconds. Crack in eggs, stirring quickly to scramble eggs with vegetables. Stir in cooked rice. Shake in soy sauce, and toss rice to coat. Drizzle with sesame oil, and toss again.');
+INSERT INTO "RECIPE" VALUES('Chicken Noodle Soup',2,'Lunch','American','45',6,'1. In a large stock pot, saute celery and onion in butter or margarine.
+Add chicken, carrots, water, bouillon cubes, marjoram, black pepper, bay leaf, and parsley. Simmer for 30 minutes.
+Add noodles, and simmer for 10 more minutes.');
+INSERT INTO "RECIPE" VALUES('Smothered Filet Mignon',3,'Dinner','American','60',7,'1. Season steaks with seasoned salt and black pepper, and arrange in a single layer in a large baking dish. In a bowl, whisk together olive oil, balsamic vinegar, mustard, and rosemary. Pour mixture over filets, and turn to coat. Marinate for up to 30 minutes.
+While you are marinating the meat, melt the butter in a skillet over medium heat. Cook onion slices in butter until soft, then stir in sugar. Continue cooking until onions are caramelized. Set aside.
+Preheat grill for high heat on one side, and medium heat on the other side.
+Lightly oil the grill grate. Place steaks on the hot side of the grill, and cook for 10 minutes, turning once. When the steaks are almost done, move to the cooler side of the grill. Top each filet with a quarter of the caramelized onions and blue cheese. Close the lid, and continue cooking until the cheese is melted.');
+INSERT INTO "RECIPE" VALUES('Fried Chicken',2,'Dinner','American','45',8,'1. In a large skillet, heat oil over medium heat. Salt and pepper chicken pieces to taste, then roll in flour to coat. Place chicken pieces in skillet and fry on medium heat until one side is golden brown, then turn and brown other side until chicken is no longer pink inside and its juices run clear. Drain on paper towel and serve!');
+INSERT INTO "RECIPE" VALUES('Italian Turkey Sandwich',3,'Lunch','Italian','300',9,'1.Cut turkey breast in half along the bone. Place the turkey breast, green pepper and onion in a 5-qt. slow cooker coated with nonstick cooking spray. Combine the chili sauce, vinegar, oregano and bouillon; pour over turkey and vegetables. Cover and cook on low for 5-6 hours or until meat juices run clear and vegetables are tender.
+Remove turkey, reserving cooking liquid. Shred the turkey with two forks; return to cooking juices. Spoon 1/2 cup onto each roll.
+');
+INSERT INTO "RECIPE" VALUES('Sausage Pizza',1,'Lunch','Italian','30',10,'1. Remove sausage from casing and pinch into dime-sized pieces.
+Spread sauce over crust; sprinkle with 1 cup cheese. Add Italian Sausage pieces and green pepper. Top with the remaining cheese.
+Bake according to crust package directions or until sausage is no longer pink (160 degrees F) and cheese is melted.');
 DROP TABLE IF EXISTS "ing_rec";
 CREATE TABLE "ing_rec" ("R_ID" INTEGER NOT NULL , "ING_ID" INTEGER NOT NULL );
 INSERT INTO "ing_rec" VALUES(1,1);
@@ -60,3 +118,53 @@ INSERT INTO "ing_rec" VALUES(4,23);
 INSERT INTO "ing_rec" VALUES(4,24);
 INSERT INTO "ing_rec" VALUES(4,25);
 INSERT INTO "ing_rec" VALUES(4,26);
+INSERT INTO "ing_rec" VALUES(5,3);
+INSERT INTO "ing_rec" VALUES(5,27);
+INSERT INTO "ing_rec" VALUES(5,28);
+INSERT INTO "ing_rec" VALUES(5,29);
+INSERT INTO "ing_rec" VALUES(5,30);
+INSERT INTO "ing_rec" VALUES(5,31);
+INSERT INTO "ing_rec" VALUES(5,1);
+INSERT INTO "ing_rec" VALUES(5,32);
+INSERT INTO "ing_rec" VALUES(6,33);
+INSERT INTO "ing_rec" VALUES(6,34);
+INSERT INTO "ing_rec" VALUES(6,35);
+INSERT INTO "ing_rec" VALUES(6,3);
+INSERT INTO "ing_rec" VALUES(6,27);
+INSERT INTO "ing_rec" VALUES(6,36);
+INSERT INTO "ing_rec" VALUES(6,19);
+INSERT INTO "ing_rec" VALUES(6,37);
+INSERT INTO "ing_rec" VALUES(6,38);
+INSERT INTO "ing_rec" VALUES(6,39);
+INSERT INTO "ing_rec" VALUES(6,40);
+INSERT INTO "ing_rec" VALUES(6,30);
+INSERT INTO "ing_rec" VALUES(7,41);
+INSERT INTO "ing_rec" VALUES(7,42);
+INSERT INTO "ing_rec" VALUES(7,43);
+INSERT INTO "ing_rec" VALUES(7,44);
+INSERT INTO "ing_rec" VALUES(7,45);
+INSERT INTO "ing_rec" VALUES(7,27);
+INSERT INTO "ing_rec" VALUES(7,3);
+INSERT INTO "ing_rec" VALUES(7,46);
+INSERT INTO "ing_rec" VALUES(7,47);
+INSERT INTO "ing_rec" VALUES(8,48);
+INSERT INTO "ing_rec" VALUES(8,49);
+INSERT INTO "ing_rec" VALUES(8,50);
+INSERT INTO "ing_rec" VALUES(8,23);
+INSERT INTO "ing_rec" VALUES(8,39);
+INSERT INTO "ing_rec" VALUES(8,32);
+INSERT INTO "ing_rec" VALUES(8,33);
+INSERT INTO "ing_rec" VALUES(8,17);
+INSERT INTO "ing_rec" VALUES(9,51);
+INSERT INTO "ing_rec" VALUES(9,1);
+INSERT INTO "ing_rec" VALUES(9,3);
+INSERT INTO "ing_rec" VALUES(9,52);
+INSERT INTO "ing_rec" VALUES(9,53);
+INSERT INTO "ing_rec" VALUES(9,54);
+INSERT INTO "ing_rec" VALUES(9,55);
+INSERT INTO "ing_rec" VALUES(9,56);
+INSERT INTO "ing_rec" VALUES(10,57);
+INSERT INTO "ing_rec" VALUES(10,58);
+INSERT INTO "ing_rec" VALUES(10,59);
+INSERT INTO "ing_rec" VALUES(10,60);
+INSERT INTO "ing_rec" VALUES(10,1);

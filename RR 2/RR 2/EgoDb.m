@@ -72,12 +72,13 @@ static EgoDb *db;
  //add some attributes to the recipe object
  //create an array to retun from this function
  //add the recipes to the array
- //create INST in recipe table and populate so that new lines are represented as <br>
- /*
+ //create INST in recipe table and populate so that new line s are represented as <br>
+
+
 - (NSArray*) getRecipesForIngredients: (NSArray*) ingredientsList
 {	
 	//ingredientsList = list of ingredients
-	NSMutableArray* ingIdList = [[NSMutableArray alloc] init];
+	NSMutableArray* ingIdList = [NSMutableArray array];
 	int i = 0;
 	//for each ingredient in the list
 	for (i = 0; i < [ingredientsList count]; i++) {
@@ -88,39 +89,36 @@ static EgoDb *db;
 		//add to list of ingredient ids
 		[ingIdList addObject: pk ];
 	}
+
 	//convert array to string
 	NSString* stringOfIds = [ingIdList componentsJoinedByString:@","];
 	//create the query
 	NSString* query= [NSString stringWithFormat:@"select RECIPE_NAME, DIFFICULTY, BLD, CULTURE, PREP_TIME from RECIPE where R_ID not in (select R_ID from ing_rec where ING_ID in (%@))", stringOfIds ];
 	NSLog(@"my query = %@", query);
 	EGODatabaseResult *rs = [db executeQuery:query];
-	
+	NSMutableArray* recipeList = [NSMutableArray array];
+
 	
 	for(EGODatabaseRow* row in rs) {
-		NSString* RECIPE_NAME = [row stringForColumn:@"RECIPE_NAME"];
-		//NSString* R_ID = [row stringForColumn:@"R_ID"]; 
+		NSString* name = [row stringForColumn:@"RECIPE_NAME"];
+		int R_ID = [row intForColumn:@"R_ID"]; 
 		NSString* BLD = [row stringForColumn:@"BLD"]; 
-		//quantity
 		
 		int difficulty = [row intForColumn:@"DIFFICULTY"];
 		NSString* blob = [row stringForColumn:@"INST"];
 		NSArray* instructions = [blob componentsSeparatedByString:@"<br>"];
 		
-		
-		
 		//create an recipe object
-		Recipe *ing = [[Recipe alloc]initWithName:RECIPE_NAME ingredients_list:nil prep_time:0 instructions:instructions cooking_time:0 ];
-		
-
-		//goes through each row
-		//[ingredientsList addObject: ing];
-		[ing release];
+		Recipe *rec = [[Recipe alloc] initWithName:name ingredients_list:instructions prep_time:0 instructions:instructions cooking_time:0 recipeid:R_ID difficulty:difficulty BLD:BLD];
+		[recipeList addObject:rec];
+		[rec release];
 	}
 	
-	return ingredientsList;
+	
+	return recipeList;
 	
 }
- */
+ 
 - (void)dealloc {
 	[db close];
     [db release];

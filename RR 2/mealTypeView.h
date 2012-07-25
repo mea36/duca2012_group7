@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface mealTypeView : UITableViewController
-{
+@interface mealTypeView : UITableViewController <UITableViewDelegate, UITableViewDataSource>{
     NSMutableArray *mealCategories;
 }
 

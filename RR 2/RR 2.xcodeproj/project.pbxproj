@@ -32,10 +32,12 @@
 		9E70670115BCBC3400475D47 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E7066FF15BCBC3400475D47 /* InfoPlist.strings */; };
 		9E70670315BCBC3400475D47 /* RR_2Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9E70670215BCBC3400475D47 /* RR_2Tests.h */; };
 		9E70670515BCBC3400475D47 /* RR_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E70670415BCBC3400475D47 /* RR_2Tests.m */; };
-		9EB6E2DD15BDE3CE00E00D86 /* mealTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6E2DB15BDE3CE00E00D86 /* mealTypeView.m */; };
-		9EB6E2DE15BDE3CE00E00D86 /* mealTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E2DC15BDE3CE00E00D86 /* mealTypeView.xib */; };
-		9EB6E2EC15BF262C00E00D86 /* recipesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6E2EA15BF262C00E00D86 /* recipesView.m */; };
-		9EB6E2ED15BF262C00E00D86 /* recipesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E2EB15BF262C00E00D86 /* recipesView.xib */; };
+		9EB6E30015BF383400E00D86 /* mealTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6E2FB15BF383400E00D86 /* mealTypeView.m */; };
+		9EB6E30115BF383400E00D86 /* mealTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E2FC15BF383400E00D86 /* mealTypeView.xib */; };
+		9EB6E30215BF383400E00D86 /* recipesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6E2FE15BF383400E00D86 /* recipesView.m */; };
+		9EB6E30315BF383400E00D86 /* recipesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E2FF15BF383400E00D86 /* recipesView.xib */; };
+		9EB6E30815C034FF00E00D86 /* chosenRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6E30615C034FE00E00D86 /* chosenRecipe.m */; };
+		9EB6E30915C034FF00E00D86 /* chosenRecipe.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E30715C034FF00E00D86 /* chosenRecipe.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,12 +87,15 @@
 		9E70670015BCBC3400475D47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9E70670215BCBC3400475D47 /* RR_2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RR_2Tests.h; sourceTree = "<group>"; };
 		9E70670415BCBC3400475D47 /* RR_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RR_2Tests.m; sourceTree = "<group>"; };
-		9EB6E2DA15BDE3CE00E00D86 /* mealTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mealTypeView.h; path = ../mealTypeView.h; sourceTree = "<group>"; };
-		9EB6E2DB15BDE3CE00E00D86 /* mealTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mealTypeView.m; path = ../mealTypeView.m; sourceTree = "<group>"; };
-		9EB6E2DC15BDE3CE00E00D86 /* mealTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = mealTypeView.xib; path = ../mealTypeView.xib; sourceTree = "<group>"; };
-		9EB6E2E915BF262C00E00D86 /* recipesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = recipesView.h; path = ../recipesView.h; sourceTree = "<group>"; };
-		9EB6E2EA15BF262C00E00D86 /* recipesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = recipesView.m; path = ../recipesView.m; sourceTree = "<group>"; };
-		9EB6E2EB15BF262C00E00D86 /* recipesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = recipesView.xib; path = ../recipesView.xib; sourceTree = "<group>"; };
+		9EB6E2FA15BF383400E00D86 /* mealTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mealTypeView.h; sourceTree = SOURCE_ROOT; };
+		9EB6E2FB15BF383400E00D86 /* mealTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mealTypeView.m; sourceTree = SOURCE_ROOT; };
+		9EB6E2FC15BF383400E00D86 /* mealTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mealTypeView.xib; sourceTree = SOURCE_ROOT; };
+		9EB6E2FD15BF383400E00D86 /* recipesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recipesView.h; sourceTree = SOURCE_ROOT; };
+		9EB6E2FE15BF383400E00D86 /* recipesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recipesView.m; sourceTree = SOURCE_ROOT; };
+		9EB6E2FF15BF383400E00D86 /* recipesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = recipesView.xib; sourceTree = SOURCE_ROOT; };
+		9EB6E30515C034FE00E00D86 /* chosenRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chosenRecipe.h; sourceTree = "<group>"; };
+		9EB6E30615C034FE00E00D86 /* chosenRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chosenRecipe.m; sourceTree = "<group>"; };
+		9EB6E30715C034FF00E00D86 /* chosenRecipe.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = chosenRecipe.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +174,15 @@
 		9E7066DA15BCBC3400475D47 /* RR 2 */ = {
 			isa = PBXGroup;
 			children = (
+				9EB6E30515C034FE00E00D86 /* chosenRecipe.h */,
+				9EB6E30615C034FE00E00D86 /* chosenRecipe.m */,
+				9EB6E30715C034FF00E00D86 /* chosenRecipe.xib */,
+				9EB6E2FA15BF383400E00D86 /* mealTypeView.h */,
+				9EB6E2FB15BF383400E00D86 /* mealTypeView.m */,
+				9EB6E2FC15BF383400E00D86 /* mealTypeView.xib */,
+				9EB6E2FD15BF383400E00D86 /* recipesView.h */,
+				9EB6E2FE15BF383400E00D86 /* recipesView.m */,
+				9EB6E2FF15BF383400E00D86 /* recipesView.xib */,
 				89B65EB615BF36B80089C3AC /* rr.sqlite3 */,
 				89B65E8915BF36320089C3AC /* Ingredient.h */,
 				89B65E8A15BF36320089C3AC /* Ingredient.m */,
@@ -176,9 +190,6 @@
 				89B65E8C15BF36320089C3AC /* Recipe.m */,
 				89B65E8D15BF36320089C3AC /* EgoDb.h */,
 				89B65E8E15BF36320089C3AC /* EgoDb.m */,
-				9E70670E15BCBFBD00475D47 /* ingredientsView.h */,
-				9E70670F15BCBFBD00475D47 /* ingredientsView.m */,
-				9E70671015BCBFBD00475D47 /* ingredientsView.xib */,
 				9E7066E315BCBC3400475D47 /* RR_2AppDelegate.h */,
 				9E7066E415BCBC3400475D47 /* RR_2AppDelegate.m */,
 				9E7066E615BCBC3400475D47 /* MainWindow.xib */,
@@ -290,8 +301,10 @@
 				9E7066DF15BCBC3400475D47 /* InfoPlist.strings in Resources */,
 				9E7066E815BCBC3400475D47 /* MainWindow.xib in Resources */,
 				9E7066EE15BCBC3400475D47 /* RootViewController.xib in Resources */,
-				9E70671215BCBFBD00475D47 /* ingredientsView.xib in Resources */,
 				89B65EB715BF36B80089C3AC /* rr.sqlite3 in Resources */,
+				9EB6E30115BF383400E00D86 /* mealTypeView.xib in Resources */,
+				9EB6E30315BF383400E00D86 /* recipesView.xib in Resources */,
+				9EB6E30915C034FF00E00D86 /* chosenRecipe.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +343,6 @@
 				9E7066E115BCBC3400475D47 /* main.m in Sources */,
 				9E7066E515BCBC3400475D47 /* RR_2AppDelegate.m in Sources */,
 				9E7066EB15BCBC3400475D47 /* RootViewController.m in Sources */,
-				9E70671115BCBFBD00475D47 /* ingredientsView.m in Sources */,
 				89B65E8F15BF36320089C3AC /* Ingredient.m in Sources */,
 				89B65E9015BF36320089C3AC /* Recipe.m in Sources */,
 				89B65E9115BF36320089C3AC /* EgoDb.m in Sources */,
@@ -338,6 +350,9 @@
 				89B65E9E15BF36620089C3AC /* EGODatabaseRequest.m in Sources */,
 				89B65E9F15BF36620089C3AC /* EGODatabaseResult.m in Sources */,
 				89B65EA015BF36620089C3AC /* EGODatabaseRow.m in Sources */,
+				9EB6E30015BF383400E00D86 /* mealTypeView.m in Sources */,
+				9EB6E30215BF383400E00D86 /* recipesView.m in Sources */,
+				9EB6E30815C034FF00E00D86 /* chosenRecipe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

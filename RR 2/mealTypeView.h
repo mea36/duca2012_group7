@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface mealTypeView : UITableViewController <UITableViewDelegate, UITableViewDataSource>{
-    NSMutableArray *mealCategories;
+    NSArray *mealCategories;
 }
 
 
 
-@property (nonatomic, retain) NSMutableArray *mealCategories;
+@property (nonatomic, retain) NSArray *mealCategories;
 @end

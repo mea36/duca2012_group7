@@ -34,9 +34,10 @@ static EgoDb *db;
 
 - (void)createEditableCopyOfDatabaseIfNeeded {
 	NSString* writeablePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/rr1.sqlite3"];
-	
+	NSLog(@"my path = %@", writeablePath);
 	if(![[NSFileManager defaultManager] fileExistsAtPath:writeablePath]) {
 		[[NSFileManager defaultManager] copyItemAtPath:[[NSBundle mainBundle] pathForResource:@"rr1" ofType:@"sqlite3"] toPath:writeablePath error:NULL];
+        NSLog(@"copying db");
 	}
 	
 }

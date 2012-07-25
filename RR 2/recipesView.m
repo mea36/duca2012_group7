@@ -8,12 +8,16 @@
 
 #import "recipesView.h"
 #import "chosenRecipe.h"
+#import "EgoDb.h"
+#import "Recipe.h"
 
 @interface recipesView ()
 
 @end
 
 @implementation recipesView
+
+@synthesize recipesList;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -28,8 +32,9 @@
 {
     [super viewDidLoad];
     self.title = @"Recipes";
-    recipesList =[[NSMutableArray alloc] init];
-    [recipesList addObject:@"Hamburgers"];
+    recipesList =[[NSArray alloc] init];
+    self.recipesList = [[EgoDb database] getIngredientsList];
+    //[recipesList addObject:@"Hamburgers"];
     //[ingredientsArray addObject:@"Beef"];
     //[ingredientsArray addObject:@"Cheese"];
     //[ingredientsArray addObject:@"Bread"];
@@ -80,7 +85,8 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }    
     // Configure the cell...
-    cell.textLabel.text = [recipesList objectAtIndex:indexPath.row];
+    cell.textLabel.text = [(Recipe*)[self.recipesList objectAtIndex:indexPath.row] name];
+    //cell.textLabel.text = [recipesList objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -142,5 +148,12 @@
     [self.navigationController pushViewController:nextView animated:YES];
     [nextView release];
 }
+
+- (void)dealloc
+{
+    [recipesList release];
+    [super dealloc];
+}
+
 
 @end

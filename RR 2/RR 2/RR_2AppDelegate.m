@@ -23,6 +23,7 @@
     // Add the navigation controller's view to the window and display.
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
+    /*
 	Ingredient* ing1 = [[Ingredient alloc] initWithName:@"pepper" ingredient_id:@"1" quantity:0 withUnits:nil];
 	NSArray *temp = [NSArray arrayWithObjects:ing1, nil];
 	[ing1 release];
@@ -31,6 +32,7 @@
 	for (i = 0; i < [retval count]; i++) {
 		NSLog(@"%@", [[retval objectAtIndex:i] name]);
 	}
+    */
     return YES;
 }
 

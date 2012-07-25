@@ -12,14 +12,23 @@
 #import "Ingredient.h"
 
 @implementation RootViewController
-@synthesize ingredientsArray;
+@synthesize ingredientsArray, selectedIngredients;
 
 -(IBAction)nextView:(id)sender
 {
+    //1. create array of that contains all ingredients that are checked ()
+    //2. add an array similar to ingredientsList on mealTypeView 
+    //3. before pushing to recipes view, use db to find list of recipes
+    //4. push that list to recipesview
     NSLog(@"trying to go to meal type");
     mealTypeView *list = [[mealTypeView alloc] initWithNibName:@"mealTypeView" bundle:nil];
-    //[self presentModalViewController:second animated:YES];
 	[self.navigationController pushViewController:list animated:YES];
+    /*
+    int i;
+    for (i = 0; i < [self.selectedIngredients count]; i++) {
+        NSLog(@"%@", [[self.selectedIngredients objectAtIndex:i] name]);
+    }
+     */
 	[list release];
 }
 
@@ -28,11 +37,16 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath {
     
     [theTableView deselectRowAtIndexPath:[theTableView indexPathForSelectedRow] animated:NO];
     UITableViewCell *cell = [theTableView cellForRowAtIndexPath:newIndexPath];
+    
+     Ingredient* ing = [self.ingredientsArray objectAtIndex:newIndexPath.row];
+    //add checkmark if appriopriate 
     if (cell.accessoryType == UITableViewCellAccessoryNone) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        [self.selectedIngredients addObject:ing];
         // Reflect selection in data model
-    } else if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
+    } else if (cell.accessoryType == UITableViewCellAccessoryCheckmark) { //removes checkmark if appropriate
         cell.accessoryType = UITableViewCellAccessoryNone;
+        [self.selectedIngredients removeObject:ing];
         // Reflect deselection in data model
     }
 }
@@ -40,8 +54,9 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath {
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    ingredientsArray =[[EgoDb database] getIngredientsList];
+
+    self.ingredientsArray = [[EgoDb database] getIngredientsList];
+    self.selectedIngredients = [NSMutableArray array];
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;                                                 
     [backButton release];
@@ -84,7 +99,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath {
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return ingredientsArray.count;
+    return self.ingredientsArray.count;
 }
 
 // Customize the appearance of table view cells.
@@ -98,7 +113,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath {
     }
 
     // Configure the cell.
-    cell.textLabel.text = [(Ingredient*)[ingredientsArray objectAtIndex:indexPath.row] name];
+    cell.textLabel.text = [(Ingredient*)[self.ingredientsArray objectAtIndex:indexPath.row] name];
+    //cell.textLabel.text = [ingredientsArray objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -173,6 +189,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath {
 - (void)dealloc
 {
     [ingredientsArray release];
+    [selectedIngredients release];
     [super dealloc];
 }
 

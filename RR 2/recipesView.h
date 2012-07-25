@@ -10,7 +10,9 @@
 
 @interface recipesView : UITableViewController
 {
-    NSMutableArray *recipesList;
+    NSArray *recipesList;
 }
+
+@property (nonatomic, retain) NSArray *recipesList;
 
 @end

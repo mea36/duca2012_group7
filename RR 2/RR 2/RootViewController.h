@@ -11,8 +11,10 @@
 @interface RootViewController : UITableViewController
 {
     NSArray *ingredientsArray;
+    NSMutableArray* selectedIngredients;
 }
 @property (nonatomic, retain) NSArray* ingredientsArray;
+@property (nonatomic, retain) NSMutableArray* selectedIngredients;
 -(IBAction)nextView:(id)sender;
 
 @end

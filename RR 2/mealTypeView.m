@@ -33,10 +33,10 @@
 
     NSLog(@"view did load - mealtype");
     self.title = @"Meal Type";
-    mealCategories =[[NSMutableArray alloc] init];
-    [mealCategories addObject:@"Breakfast"];
-    [mealCategories addObject:@"Lunch"];
-    [mealCategories addObject:@"Dinner"];
+    mealCategories =[[NSArray alloc] initWithObjects:@"Breakfast", @"Lunch", @"Dinner",nil];
+    //[mealCategories addObject:@"Breakfast"];
+    //[mealCategories addObject:@"Lunch"];
+    //[mealCategories addObject:@"Dinner"];
     //[ingredientsArray addObject:@"Bread"];
     //[ingredientsArray addObject:@"Eggs"];
     //[ingredientsArray addObject:@"Chicken"];
@@ -46,6 +46,7 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
 - (void)viewDidUnload

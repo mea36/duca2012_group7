@@ -8,11 +8,10 @@
 
 #import "chosenRecipe.h"
 
-@interface chosenRecipe ()
-
-@end
-
 @implementation chosenRecipe
+
+@synthesize recipe;
+@synthesize instructions;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +25,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //[self.instructions setText:@"hello bad news bears go to japan"];
+    NSArray* instructionList = [self.recipe instructions];
+    NSLog(@"%@", instructionList);
+    NSString *instr = @"";
+    int i;
+    for (i = 0; i < [instructionList count]; i ++) {
+        NSString *temp = [instructionList objectAtIndex:i];
+        NSLog(temp);
+        instr = [NSString stringWithFormat:@"%@\n%@",instr,temp]; 
+    }
+    [self.instructions setText: instr];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -40,5 +50,9 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
+-(void) dealloc{
+    [recipe release];
+    [instructions release];
+    [super dealloc];
+}
 @end

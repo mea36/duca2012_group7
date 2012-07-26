@@ -36,7 +36,6 @@
     NSLog(@"view did load - mealtype");
     self.title = @"Meal Type";
     mealCategories =[[NSArray alloc] initWithObjects:@"Breakfast", @"Lunch", @"Dinner",nil];
-
     //[mealCategories addObject:@"Breakfast"];
     //[mealCategories addObject:@"Lunch"];
     //[mealCategories addObject:@"Dinner"];
@@ -137,25 +136,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-   // [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    /*
-    if ([[mealCategories objectAtIndex:indexPath.row] isEqual:@"Breakfast"]) {
-        recipesView *Recipesview = [[recipesView alloc] initWithNibName:@"recipesView" bundle:nil];
-        [self.navigationController pushViewController:Recipesview animated:YES];
-    }
-    else if ([[mealCategories objectAtIndex:indexPath.row] isEqual:@"Lunch"]) {
-        recipesView *Recipesview2 = [[recipesView alloc] initWithNibName:@"recipesView" bundle:nil];
-        [self.navigationController pushViewController:Recipesview2 animated:YES];
-    }
-    else if ([[mealCategories objectAtIndex:indexPath.row] isEqual:@"Dinner"]) {
-        recipesView *Recipesview3 = [[recipesView alloc] initWithNibName:@"recipesView" bundle:nil];
-        [self.navigationController pushViewController:Recipesview3 animated:YES];
-    }
-     */
-    
+    NSString* mealType = [mealCategories objectAtIndex:indexPath.row];
     recipesView* nextView = [[recipesView alloc] initWithNibName:@"recipesView" bundle:nil];
-    nextView.recipesList = [[EgoDb database] getRecipesForIngredients:self.ingredientsList];
+    nextView.recipesList = [[EgoDb database] getRecipesForIngredients:self.ingredientsList withType:mealType];
 
     [self.navigationController pushViewController:nextView animated:YES];
     [nextView release];

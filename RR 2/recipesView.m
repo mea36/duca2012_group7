@@ -134,7 +134,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    //[tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     // Navigation logic may go here. Create and push another view controller.
     /*
@@ -144,7 +144,10 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
-    chosenRecipe* nextView = [[chosenRecipe alloc] initWithNibName:@"recipesView" bundle:nil];
+    chosenRecipe* nextView = [[chosenRecipe alloc] initWithNibName:@"chosenRecipe" bundle:nil];
+    Recipe* temp = [self.recipesList objectAtIndex:indexPath.row];
+    nextView.recipe= temp;
+    
     [self.navigationController pushViewController:nextView animated:YES];
     [nextView release];
 }

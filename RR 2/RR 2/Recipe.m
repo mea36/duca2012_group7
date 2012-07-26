@@ -17,12 +17,13 @@
 	
 	self.name = n;
 	self.ingredients_list = ing;
+    self.BLD = type;
 	self.prep_time = prep;
 	self.instructions = inst;
 	self.cooking_time = cook;
 	self.recipeid = R_ID;
 	self.difficulty = DIFFICULTY; 
-	self.BLD = type;
+
 	
 	return self;
 }

@@ -48,6 +48,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath {
         cell.accessoryType = UITableViewCellAccessoryNone;
         [self.selectedIngredients removeObject:ing];
         // Reflect deselection in data model
+        
     }
 }
 
@@ -110,8 +111,14 @@ didSelectRowAtIndexPath:(NSIndexPath *)newIndexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        [cell setAccessoryView:nil];
     }
-
+    /*else {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        [cell setAccessoryView:cell];
+    }*/ 
+    
+cell.accessoryType = UITableViewCellAccessoryNone;
     // Configure the cell.
     cell.textLabel.text = [(Ingredient*)[self.ingredientsArray objectAtIndex:indexPath.row] name];
     //cell.textLabel.text = [ingredientsArray objectAtIndex:indexPath.row];

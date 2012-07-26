@@ -9,7 +9,7 @@
 #import "EgoDb.h"
 #import "Recipe.h"
 #import "Ingredient.h"
-
+#import "mealTypeView.h"
 
 @implementation EgoDb
 static EgoDb *db;	
@@ -76,7 +76,7 @@ static EgoDb *db;
  //create INST in recipe table and populate so that new line s are represented as <br>
 
 
-- (NSArray*) getRecipesForIngredients: (NSArray*) ingredientsList
+- (NSArray*) getRecipesForIngredients: (NSArray*) ingredientsList withType:(NSString*) mealType
 {	
 	//ingredientsList = list of ingredients
 	NSMutableArray* ingIdList = [NSMutableArray array];
@@ -94,11 +94,10 @@ static EgoDb *db;
 	//convert array to string
 	NSString* stringOfIds = [ingIdList componentsJoinedByString:@","];
 	//create the query
-	NSString* query= [NSString stringWithFormat:@"select RECIPE_NAME, DIFFICULTY, BLD, CULTURE, PREP_TIME from RECIPE where R_ID not in (select R_ID from ing_rec where ING_ID in (%@))", stringOfIds ];
+	NSString* query= [NSString stringWithFormat:@"select RECIPE_NAME, DIFFICULTY, BLD, CULTURE, PREP_TIME, INSTR from RECIPE where BLD = '%@' and R_ID not in (select R_ID from ing_rec where ING_ID in (%@))", mealType, stringOfIds ];
 	NSLog(@"my query = %@", query);
 	EGODatabaseResult *rs = [db executeQuery:query];
 	NSMutableArray* recipeList = [NSMutableArray array];
-
 	
 	for(EGODatabaseRow* row in rs) {
 		NSString* name = [row stringForColumn:@"RECIPE_NAME"];
@@ -106,7 +105,8 @@ static EgoDb *db;
 		NSString* BLD = [row stringForColumn:@"BLD"]; 
 		
 		int difficulty = [row intForColumn:@"DIFFICULTY"];
-		NSString* blob = [row stringForColumn:@"INST"];
+		NSString* blob = [row stringForColumn:@"INSTR"];
+        NSLog(@"blob = %@", blob);
 		NSArray* instructions = [blob componentsSeparatedByString:@"<br>"];
 		
 		//create an recipe object

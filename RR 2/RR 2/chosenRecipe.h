@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Recipe.h"
 
 @interface chosenRecipe : UIViewController
+{
+    Recipe *recipe;
+    IBOutlet UITextView* instructions;
+}
+
+@property (nonatomic, retain) Recipe *recipe;
+@property (nonatomic, retain) IBOutlet UITextView *instructions;
 
 @end

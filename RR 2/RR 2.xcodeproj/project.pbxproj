@@ -37,9 +37,10 @@
 		9EB6E30315BF383400E00D86 /* recipesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E2FF15BF383400E00D86 /* recipesView.xib */; };
 		9EB6E30815C034FF00E00D86 /* chosenRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6E30615C034FE00E00D86 /* chosenRecipe.m */; };
 		9EB6E30915C034FF00E00D86 /* chosenRecipe.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E30715C034FF00E00D86 /* chosenRecipe.xib */; };
-		9EB6E31015C0470400E00D86 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E30F15C0470400E00D86 /* icon.png */; };
 		9EB6E31215C04BB000E00D86 /* rr1.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E31115C04BAF00E00D86 /* rr1.sqlite3 */; };
 		9EB6E31415C04CF800E00D86 /* rr.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E31315C04CF800E00D86 /* rr.sqlite3 */; };
+		9EB6E31E15C0DEEE00E00D86 /* iconsmall-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E31D15C0DEEE00E00D86 /* iconsmall-1.png */; };
+		9EB6E32215C0E13600E00D86 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6E32115C0E13600E00D86 /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,9 +98,10 @@
 		9EB6E30515C034FE00E00D86 /* chosenRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chosenRecipe.h; sourceTree = "<group>"; };
 		9EB6E30615C034FE00E00D86 /* chosenRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chosenRecipe.m; sourceTree = "<group>"; };
 		9EB6E30715C034FF00E00D86 /* chosenRecipe.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = chosenRecipe.xib; sourceTree = "<group>"; };
-		9EB6E30F15C0470400E00D86 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../../Downloads/icon.png; sourceTree = "<group>"; };
 		9EB6E31115C04BAF00E00D86 /* rr1.sqlite3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rr1.sqlite3; sourceTree = "<group>"; };
 		9EB6E31315C04CF800E00D86 /* rr.sqlite3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rr.sqlite3; sourceTree = "<group>"; };
+		9EB6E31D15C0DEEE00E00D86 /* iconsmall-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iconsmall-1.png"; path = "../iconsmall-1.png"; sourceTree = "<group>"; };
+		9EB6E32115C0E13600E00D86 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,8 +211,9 @@
 		9E7066DB15BCBC3400475D47 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9EB6E30F15C0470400E00D86 /* icon.png */,
 				9E7066DC15BCBC3400475D47 /* RR 2-Info.plist */,
+				9EB6E32115C0E13600E00D86 /* Default.png */,
+				9EB6E31D15C0DEEE00E00D86 /* iconsmall-1.png */,
 				9E7066DD15BCBC3400475D47 /* InfoPlist.strings */,
 				9E7066E015BCBC3400475D47 /* main.m */,
 				9E7066E215BCBC3400475D47 /* RR 2-Prefix.pch */,
@@ -310,9 +313,10 @@
 				9EB6E30115BF383400E00D86 /* mealTypeView.xib in Resources */,
 				9EB6E30315BF383400E00D86 /* recipesView.xib in Resources */,
 				9EB6E30915C034FF00E00D86 /* chosenRecipe.xib in Resources */,
-				9EB6E31015C0470400E00D86 /* icon.png in Resources */,
 				9EB6E31215C04BB000E00D86 /* rr1.sqlite3 in Resources */,
 				9EB6E31415C04CF800E00D86 /* rr.sqlite3 in Resources */,
+				9EB6E31E15C0DEEE00E00D86 /* iconsmall-1.png in Resources */,
+				9EB6E32215C0E13600E00D86 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
